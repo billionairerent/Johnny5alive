@@ -2,6 +2,24 @@
 
 Find strong-fit roles, tailor ATS-friendly resumes, generate grounded cover letters, track every application, and automate the repetitive parts of the process — without faking qualifications or losing control.
 
+## Deploy in One Click (No Coding Required)
+
+Click the button below to deploy your own copy of AutoApplyAI to the internet for free:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fbillionairerent%2FJohnny5alive%2Ftree%2Fclaude%2Fsetup-autoapplyai-prompt-6lxQH&project-name=autoapplyai&repository-name=autoapplyai)
+
+**What happens when you click:**
+1. You'll be asked to sign up for Vercel (free — use your GitHub account)
+2. Vercel will copy the code and build it automatically
+3. In about 60 seconds you'll get a live URL like `autoapplyai.vercel.app`
+4. Open that URL — the app works immediately in demo mode (no database needed)
+
+**That's it. No terminal, no code, no setup.**
+
+When you're ready to add a real database later, follow the Supabase setup instructions below.
+
+---
+
 ## Tech Stack
 
 | Layer | Technology |
