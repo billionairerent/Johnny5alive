@@ -1,4 +1,7 @@
-import { createClient } from "@/lib/supabase/server";
+"use client";
+
+import { useEffect, useState } from "react";
+import { createClient } from "@/lib/supabase/client";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import {
   FileText,
@@ -9,38 +12,50 @@ import {
   Clock,
 } from "lucide-react";
 
-async function getStats(userId: string) {
-  const supabase = await createClient();
-
-  const [resumes, jobs, applications] = await Promise.all([
-    supabase
-      .from("resumes")
-      .select("id", { count: "exact", head: true })
-      .eq("user_id", userId),
-    supabase
-      .from("jobs")
-      .select("id", { count: "exact", head: true })
-      .eq("user_id", userId),
-    supabase
-      .from("applications")
-      .select("id", { count: "exact", head: true })
-      .eq("user_id", userId),
-  ]);
-
-  return {
-    resumes: resumes.count ?? 0,
-    jobs: jobs.count ?? 0,
-    applications: applications.count ?? 0,
-  };
+interface Stats {
+  resumes: number;
+  jobs: number;
+  applications: number;
 }
 
-export default async function DashboardPage() {
-  const supabase = await createClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+export default function DashboardPage() {
+  const [stats, setStats] = useState<Stats>({
+    resumes: 0,
+    jobs: 0,
+    applications: 0,
+  });
 
-  const stats = user ? await getStats(user.id) : { resumes: 0, jobs: 0, applications: 0 };
+  useEffect(() => {
+    async function load() {
+      const supabase = createClient();
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
+      if (!user) return;
+
+      const [resumes, jobs, applications] = await Promise.all([
+        supabase
+          .from("resumes")
+          .select("id", { count: "exact", head: true })
+          .eq("user_id", user.id),
+        supabase
+          .from("jobs")
+          .select("id", { count: "exact", head: true })
+          .eq("user_id", user.id),
+        supabase
+          .from("applications")
+          .select("id", { count: "exact", head: true })
+          .eq("user_id", user.id),
+      ]);
+
+      setStats({
+        resumes: resumes.count ?? 0,
+        jobs: jobs.count ?? 0,
+        applications: applications.count ?? 0,
+      });
+    }
+    load();
+  }, []);
 
   const cards = [
     {

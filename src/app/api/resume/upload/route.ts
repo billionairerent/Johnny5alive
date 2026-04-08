@@ -5,7 +5,39 @@ import {
   MAX_RESUME_SIZE_BYTES,
 } from "@/lib/constants";
 
+function isDemoMode(): boolean {
+  return (
+    !process.env.NEXT_PUBLIC_SUPABASE_URL ||
+    process.env.NEXT_PUBLIC_SUPABASE_URL === "https://your-project.supabase.co"
+  );
+}
+
 export async function POST(request: Request) {
+  // In demo mode, resume uploads are handled client-side.
+  if (isDemoMode()) {
+    const formData = await request.formData();
+    const file = formData.get("file") as File | null;
+    if (!file) {
+      return NextResponse.json({ error: "No file provided" }, { status: 400 });
+    }
+    // Return a fake success — the client-side demo store handles persistence.
+    return NextResponse.json(
+      {
+        resume: {
+          id: crypto.randomUUID(),
+          name: file.name,
+          is_master: false,
+          file_path: `demo/${file.name}`,
+          file_type: file.type,
+          file_size: file.size,
+          created_at: new Date().toISOString(),
+        },
+        demo: true,
+      },
+      { status: 201 }
+    );
+  }
+
   const supabase = await createClient();
 
   // Verify auth

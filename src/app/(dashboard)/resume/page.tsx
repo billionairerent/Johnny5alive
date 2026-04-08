@@ -60,20 +60,27 @@ export default function ResumePage() {
 
     setUploading(true);
 
-    const formData = new FormData();
-    formData.append("file", file);
+    // In demo mode, persist directly via the client-side demo store.
+    const supabase = createClient();
+    const {
+      data: { user },
+    } = await supabase.auth.getUser();
 
-    const res = await fetch("/api/resume/upload", {
-      method: "POST",
-      body: formData,
-    });
+    if (user) {
+      const existingResumes = await supabase
+        .from("resumes")
+        .select("id", { count: "exact", head: true })
+        .eq("user_id", user.id);
+      const isMaster = (existingResumes.count ?? 0) === 0;
 
-    const result = await res.json();
-
-    if (!res.ok) {
-      setError(result.error || "Upload failed.");
-      setUploading(false);
-      return;
+      await supabase.from("resumes").insert({
+        user_id: user.id,
+        name: file.name,
+        is_master: isMaster,
+        file_path: `uploads/${file.name}`,
+        file_type: file.type,
+        file_size: file.size,
+      });
     }
 
     setUploading(false);

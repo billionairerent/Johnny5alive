@@ -1,7 +1,19 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 
+function isDemoMode(): boolean {
+  return (
+    !process.env.NEXT_PUBLIC_SUPABASE_URL ||
+    process.env.NEXT_PUBLIC_SUPABASE_URL === "https://your-project.supabase.co"
+  );
+}
+
 export async function updateSession(request: NextRequest) {
+  // In demo mode, allow all routes — auth is handled client-side.
+  if (isDemoMode()) {
+    return NextResponse.next({ request });
+  }
+
   let supabaseResponse = NextResponse.next({ request });
 
   const supabase = createServerClient(
