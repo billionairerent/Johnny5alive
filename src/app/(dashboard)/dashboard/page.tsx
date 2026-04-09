@@ -1,14 +1,17 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { ScoreBadge } from "@/components/score-badge";
 import {
   FileText,
   Search,
   ClipboardList,
   TrendingUp,
-  AlertCircle,
+  Plus,
   Clock,
 } from "lucide-react";
 
@@ -18,12 +21,27 @@ interface Stats {
   applications: number;
 }
 
+interface RecentJob {
+  id: string;
+  title: string;
+  company: string;
+  created_at: string;
+}
+
+interface ScoreRow {
+  job_id: string;
+  fit_score: number;
+  recommendation: string;
+}
+
 export default function DashboardPage() {
   const [stats, setStats] = useState<Stats>({
     resumes: 0,
     jobs: 0,
     applications: 0,
   });
+  const [recentJobs, setRecentJobs] = useState<RecentJob[]>([]);
+  const [scores, setScores] = useState<Map<string, ScoreRow>>(new Map());
 
   useEffect(() => {
     async function load() {
@@ -53,11 +71,32 @@ export default function DashboardPage() {
         jobs: jobs.count ?? 0,
         applications: applications.count ?? 0,
       });
+
+      // Load recent jobs
+      const { data: jobData } = await supabase
+        .from("jobs")
+        .select("id, title, company, created_at")
+        .eq("user_id", user.id)
+        .order("created_at", { ascending: false });
+
+      if (jobData) setRecentJobs(jobData.slice(0, 5));
+
+      // Load scores
+      const { data: scoreData } = await supabase
+        .from("job_scores")
+        .select("job_id, fit_score, recommendation")
+        .eq("user_id", user.id);
+
+      if (scoreData) {
+        const map = new Map<string, ScoreRow>();
+        for (const s of scoreData) map.set(s.job_id, s as ScoreRow);
+        setScores(map);
+      }
     }
     load();
   }, []);
 
-  const cards = [
+  const statCards = [
     {
       label: "Resumes",
       value: stats.resumes,
@@ -86,16 +125,24 @@ export default function DashboardPage() {
 
   return (
     <div className="space-y-8">
-      <div>
-        <h1 className="text-2xl font-bold text-gray-900">Dashboard</h1>
-        <p className="mt-1 text-sm text-gray-600">
-          Your job search at a glance.
-        </p>
+      <div className="flex items-center justify-between">
+        <div>
+          <h1 className="text-2xl font-bold text-gray-900">Dashboard</h1>
+          <p className="mt-1 text-sm text-gray-600">
+            Your job search at a glance.
+          </p>
+        </div>
+        <Link href="/jobs/import">
+          <Button size="sm">
+            <Plus className="h-4 w-4 mr-1.5" />
+            Import Job
+          </Button>
+        </Link>
       </div>
 
       {/* Stat cards */}
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        {cards.map((card) => (
+        {statCards.map((card) => (
           <Card key={card.label}>
             <CardContent className="flex items-center gap-4">
               <div className={`rounded-lg p-3 ${card.color}`}>
@@ -114,19 +161,68 @@ export default function DashboardPage() {
         ))}
       </div>
 
-      {/* Quick actions */}
+      {/* Recent jobs + Follow-ups */}
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
         <Card>
           <CardHeader>
-            <h2 className="text-lg font-semibold text-gray-900 flex items-center gap-2">
-              <AlertCircle className="h-5 w-5 text-amber-500" />
-              Needs Review
-            </h2>
+            <div className="flex items-center justify-between">
+              <h2 className="text-lg font-semibold text-gray-900 flex items-center gap-2">
+                <Search className="h-5 w-5 text-emerald-500" />
+                Recent Jobs
+              </h2>
+              {recentJobs.length > 0 && (
+                <Link
+                  href="/jobs"
+                  className="text-xs font-medium text-brand-600 hover:text-brand-700"
+                >
+                  View all
+                </Link>
+              )}
+            </div>
           </CardHeader>
           <CardContent>
-            <p className="text-sm text-gray-500">
-              No items need your review right now.
-            </p>
+            {recentJobs.length === 0 ? (
+              <div className="text-center py-4">
+                <p className="text-sm text-gray-500 mb-2">No jobs imported yet.</p>
+                <Link href="/jobs/import">
+                  <Button size="sm" variant="secondary">
+                    Import your first job
+                  </Button>
+                </Link>
+              </div>
+            ) : (
+              <div className="space-y-3">
+                {recentJobs.map((job) => {
+                  const score = scores.get(job.id);
+                  return (
+                    <Link
+                      key={job.id}
+                      href={`/jobs/${job.id}`}
+                      className="flex items-center justify-between py-2 hover:bg-gray-50 rounded-lg px-2 -mx-2 transition-colors"
+                    >
+                      <div className="min-w-0">
+                        <p className="text-sm font-medium text-gray-900 truncate">
+                          {job.title}
+                        </p>
+                        <p className="text-xs text-gray-500">{job.company}</p>
+                      </div>
+                      {score && (
+                        <ScoreBadge
+                          score={score.fit_score}
+                          recommendation={
+                            score.recommendation as
+                              | "strong_apply"
+                              | "apply_with_edits"
+                              | "skip"
+                          }
+                          size="sm"
+                        />
+                      )}
+                    </Link>
+                  );
+                })}
+              </div>
+            )}
           </CardContent>
         </Card>
 

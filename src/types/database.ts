@@ -153,6 +153,35 @@ export interface Database {
         };
         Update: Partial<Database["public"]["Tables"]["job_scores"]["Insert"]>;
       };
+      job_imports: {
+        Row: {
+          id: string;
+          user_id: string;
+          job_id: string | null;
+          source: string;
+          raw_text: string;
+          source_url: string | null;
+          extracted_data: Json | null;
+          extraction_method: string | null;
+          status: string;
+          error: string | null;
+          created_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id?: string;
+          user_id: string;
+          job_id?: string | null;
+          source: string;
+          raw_text: string;
+          source_url?: string | null;
+          extracted_data?: Json | null;
+          extraction_method?: string | null;
+          status?: string;
+          error?: string | null;
+        };
+        Update: Partial<Database["public"]["Tables"]["job_imports"]["Insert"]>;
+      };
       logs: {
         Row: {
           id: string;
