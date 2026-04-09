@@ -158,6 +158,8 @@ export async function importAndScoreJob(
     const score = scoreJobFit(extracted, snapshot);
 
     // 6. Save score
+    // Encode breakdown, confidence, and keywords into explanation as JSON
+    // so the job detail page can reconstruct the full FitScore.
     await supabase.from("job_scores").insert({
       job_id: jobId,
       user_id: userId,
@@ -167,7 +169,12 @@ export async function importAndScoreJob(
       risk_flags: score.missing_keywords.slice(0, 10),
       interview_angle: score.strengths[0] || null,
       recommendation: score.recommendation,
-      explanation: score.notes,
+      explanation: JSON.stringify({
+        notes: score.notes,
+        breakdown: score.breakdown,
+        confidence: score.confidence,
+        matched_keywords: score.matched_keywords,
+      }),
     });
 
     // 7. Update job status

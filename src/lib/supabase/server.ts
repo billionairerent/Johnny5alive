@@ -27,10 +27,9 @@ function createDemoServerClient() {
       },
     },
     from(_table: string) {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       return {
         select(_cols?: string, opts?: { count?: string; head?: boolean }) {
-          const self = this as { _filters: Record<string, unknown> };
-          self._filters = {};
           return {
             eq(_col: string, _val: unknown) { return this; },
             order(_col: string, _opts?: unknown) { return this; },
@@ -91,7 +90,7 @@ export async function createClient() {
         getAll() {
           return cookieStore.getAll();
         },
-        setAll(cookiesToSet) {
+        setAll(cookiesToSet: Array<{ name: string; value: string; options?: Record<string, unknown> }>) {
           try {
             cookiesToSet.forEach(({ name, value, options }) =>
               cookieStore.set(name, value, options)

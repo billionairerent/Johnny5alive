@@ -35,6 +35,7 @@ interface ScoreRow {
 }
 
 export default function DashboardPage() {
+  const [loading, setLoading] = useState(true);
   const [stats, setStats] = useState<Stats>({
     resumes: 0,
     jobs: 0,
@@ -92,6 +93,7 @@ export default function DashboardPage() {
         for (const s of scoreData) map.set(s.job_id, s as ScoreRow);
         setScores(map);
       }
+      setLoading(false);
     }
     load();
   }, []);
@@ -122,6 +124,14 @@ export default function DashboardPage() {
       color: "text-amber-600 bg-amber-50",
     },
   ];
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center py-20">
+        <div className="h-8 w-8 animate-spin rounded-full border-4 border-gray-200 border-t-brand-600" />
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-8">

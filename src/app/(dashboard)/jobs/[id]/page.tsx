@@ -88,26 +88,37 @@ export default function JobDetailPage() {
 
   const extracted = job.requirements;
 
-  // Reconstruct a FitScore from the database row for display
-  const fitScore: FitScore | null = scoreRow
-    ? {
-        overall_score: scoreRow.fit_score,
-        recommendation: scoreRow.recommendation as FitScore["recommendation"],
-        strengths: scoreRow.strengths || [],
-        gaps: scoreRow.gaps || [],
-        matched_keywords: [],
-        missing_keywords: scoreRow.risk_flags || [],
-        breakdown: {
-          title_alignment: 0,
-          skill_overlap: 0,
-          experience_overlap: 0,
-          education_match: 0,
-          keyword_relevance: 0,
-        },
-        confidence: 0,
-        notes: scoreRow.explanation || "",
-      }
-    : null;
+  // Reconstruct a FitScore from the database row for display.
+  // The explanation field stores JSON with breakdown, confidence, etc.
+  let fitScore: FitScore | null = null;
+  if (scoreRow) {
+    let notes = scoreRow.explanation || "";
+    let breakdown = { title_alignment: 0, skill_overlap: 0, experience_overlap: 0, education_match: 0, keyword_relevance: 0 };
+    let confidence = 0;
+    let matched_keywords: string[] = [];
+
+    try {
+      const extra = JSON.parse(scoreRow.explanation || "{}");
+      if (extra.breakdown) breakdown = extra.breakdown;
+      if (extra.confidence) confidence = extra.confidence;
+      if (extra.matched_keywords) matched_keywords = extra.matched_keywords;
+      if (extra.notes) notes = extra.notes;
+    } catch {
+      // Older scores may have plain text explanation — use as-is
+    }
+
+    fitScore = {
+      overall_score: scoreRow.fit_score,
+      recommendation: scoreRow.recommendation as FitScore["recommendation"],
+      strengths: scoreRow.strengths || [],
+      gaps: scoreRow.gaps || [],
+      matched_keywords,
+      missing_keywords: scoreRow.risk_flags || [],
+      breakdown,
+      confidence,
+      notes,
+    };
+  }
 
   return (
     <div className="space-y-6 max-w-3xl">

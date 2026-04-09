@@ -27,6 +27,7 @@ interface ScoreRow {
 export default function JobsPage() {
   const [jobs, setJobs] = useState<JobRow[]>([]);
   const [scores, setScores] = useState<Map<string, ScoreRow>>(new Map());
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function load() {
@@ -54,6 +55,7 @@ export default function JobsPage() {
         for (const s of scoreData) map.set(s.job_id, s as ScoreRow);
         setScores(map);
       }
+      setLoading(false);
     }
     load();
   }, []);
@@ -75,7 +77,11 @@ export default function JobsPage() {
         </Link>
       </div>
 
-      {jobs.length === 0 ? (
+      {loading ? (
+        <div className="flex items-center justify-center py-20">
+          <div className="h-8 w-8 animate-spin rounded-full border-4 border-gray-200 border-t-brand-600" />
+        </div>
+      ) : jobs.length === 0 ? (
         <Card>
           <CardContent className="py-12 text-center">
             <p className="text-sm text-gray-500">

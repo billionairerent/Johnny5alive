@@ -46,13 +46,20 @@ class DemoQueryBuilder {
   private countOnly = false;
   private headOnly = false;
   private singleRow = false;
+  private returnInserted = false;
 
   constructor(table: string) {
     this.table = table;
   }
 
   select(cols?: string, opts?: { count?: string; head?: boolean }) {
-    this.op = "select";
+    // If chained after insert (e.g. .insert().select().single()),
+    // keep the op as "insert" but flag to return the inserted data.
+    if (this.op === "insert") {
+      this.returnInserted = true;
+    } else {
+      this.op = "select";
+    }
     this.selectCols = cols || "*";
     if (opts?.count) this.countOnly = true;
     if (opts?.head) this.headOnly = true;
@@ -141,8 +148,16 @@ class DemoQueryBuilder {
         }));
         all.push(...created);
         this.save(all);
+        let insertResult: unknown;
+        if (this.returnInserted || this.singleRow) {
+          insertResult = this.singleRow
+            ? created[0] ?? null
+            : created.length === 1 ? created[0] : created;
+        } else {
+          insertResult = created.length === 1 ? created[0] : created;
+        }
         resolve({
-          data: created.length === 1 ? created[0] : created,
+          data: insertResult,
           error: null,
         });
         break;

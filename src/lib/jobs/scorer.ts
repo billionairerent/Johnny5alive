@@ -6,7 +6,6 @@ import type {
   ExtractedJob,
   FitScore,
   UserProfileSnapshot,
-  SCORE_WEIGHTS as WeightsType,
 } from "@/types/jobs";
 import { SCORE_THRESHOLDS, SCORE_WEIGHTS } from "@/types/jobs";
 import { normalize } from "./normalizer";
@@ -161,8 +160,8 @@ function generateInsights(
 export function scoreJobFit(
   job: ExtractedJob,
   profile: UserProfileSnapshot,
-  thresholds = SCORE_THRESHOLDS,
-  weights = SCORE_WEIGHTS
+  thresholds: { strong_apply: number; apply_with_edits: number } = SCORE_THRESHOLDS,
+  weights: Record<string, number> = SCORE_WEIGHTS
 ): FitScore {
   // Calculate each dimension
   const title_alignment = scoreTitleAlignment(
