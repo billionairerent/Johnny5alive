@@ -6,7 +6,7 @@ import { createClient } from "@/lib/supabase/client";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { ScoreCard } from "@/components/score-card";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, ExternalLink, MapPin, Briefcase, Calendar } from "lucide-react";
+import { ArrowLeft, ExternalLink, MapPin, Briefcase, Calendar, FileText } from "lucide-react";
 import Link from "next/link";
 import type { FitScore, ExtractedJob } from "@/types/jobs";
 
@@ -122,9 +122,17 @@ export default function JobDetailPage() {
 
   return (
     <div className="space-y-6 max-w-3xl">
-      <Link href="/jobs" className="text-sm text-brand-600 hover:text-brand-700 flex items-center gap-1">
-        <ArrowLeft className="h-4 w-4" /> Back to Jobs
-      </Link>
+      <div className="flex items-center justify-between">
+        <Link href="/jobs" className="text-sm text-brand-600 hover:text-brand-700 flex items-center gap-1">
+          <ArrowLeft className="h-4 w-4" /> Back to Jobs
+        </Link>
+        <Link href={`/jobs/${jobId}/documents`}>
+          <Button size="sm">
+            <FileText className="h-4 w-4 mr-1.5" />
+            Tailor Documents
+          </Button>
+        </Link>
+      </div>
 
       {/* Job header */}
       <Card>
