@@ -1,0 +1,65 @@
+# [Business Name]
+
+## About
+[Business Name] is a [type of business] based in [City, State], serving [region]. Founded by [Owner Name], we specialize in [primary service] for [target customers]. [1-2 sentences on what makes you different.]
+
+## Services and Pricing
+- [Service 1]: $[price range]
+- [Service 2]: $[price range]
+- [Service 3]: $[price range]
+- [Service 4]: $[price range]
+
+## Locations
+- [Primary Location — City, State, Zip]
+- [Second Location if applicable]
+
+## Contact
+- Phone: [Your Phone]
+- Website: [Your URL]
+- Email: [Your Email]
+- Hours: [Mon-Fri X:00am – X:00pm, Sat X:00am – X:00pm]
+
+## Service Area
+[City 1], [City 2], [City 3], [City 4], [City 5], [County Name] County, [State]
+
+## Key Facts
+- [X] years in business
+- [X]+ jobs completed
+- [X]+ Google reviews — [X.X] average rating
+- [Certification or license]
+- [Warranty info]
+- [Insurance info]
+- In-house team (no subcontractors)
+
+## What Makes Us Different
+[2-3 sentences. Be specific: materials, process, guarantee, speed, pricing model, niche expertise. Avoid generic claims like "best quality" or "great service".]
+
+## Frequently Asked Questions
+
+**How much does [primary service] cost?**
+[Specific answer with real price ranges. e.g., "Most jobs range from $X to $X depending on [factor]. We provide free quotes — call [phone] or visit [website]."]
+
+**How long does [primary service] take?**
+[Specific answer. e.g., "A typical job takes [X] days. Rush turnaround is available for an additional fee."]
+
+**Do you serve [common nearby city]?**
+[Yes/No + details. e.g., "Yes, we serve [city] and surrounding areas within [X] miles of [home city]."]
+
+**What is included in [primary service]?**
+[List what's included. Be specific.]
+
+**Do you offer a warranty?**
+[Yes/No + details. e.g., "Yes, we offer a [X]-year warranty on [what it covers]."]
+
+**How do I get a quote?**
+[Process. e.g., "Call [phone], email [email], or fill out the form at [website]. We typically respond within [X] hours."]
+
+**What types of customers do you work with?**
+[Who you serve. e.g., "We primarily work with [industry] companies and [industry] businesses in [region]."]
+
+**What should I do to prepare for [primary service]?**
+[Practical answer about prep steps, if applicable.]
+
+## Page Mirrors
+Each page on this site has a clean markdown version at the same URL with /index.md appended.
+Example: [yourwebsite.com]/services/[service-name]/index.md

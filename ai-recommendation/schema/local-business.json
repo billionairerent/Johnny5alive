@@ -1,0 +1,41 @@
+{
+  "_comment": "Paste this inside a <script type='application/ld+json'> tag in your <head>. Edit all [PLACEHOLDERS].",
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "[Business Name]",
+  "description": "[One-sentence description of what you do]",
+  "url": "https://[yourwebsite.com]",
+  "telephone": "[+1-555-555-5555]",
+  "email": "[your@email.com]",
+  "priceRange": "[$$ or $$$]",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "[123 Main St]",
+    "addressLocality": "[City]",
+    "addressRegion": "[State abbreviation]",
+    "postalCode": "[Zip]",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "[latitude]",
+    "longitude": "[longitude]"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "17:00"
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "[4.8]",
+    "reviewCount": "[127]"
+  },
+  "sameAs": [
+    "https://www.google.com/maps/place/[your-listing]",
+    "https://www.facebook.com/[yourpage]"
+  ]
+}

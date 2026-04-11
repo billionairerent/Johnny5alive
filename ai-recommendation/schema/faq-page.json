@@ -1,0 +1,71 @@
+{
+  "_comment": "Paste this inside a <script type='application/ld+json'> tag in your <head>. Edit all [PLACEHOLDERS].",
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does [primary service] cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "[Specific answer with real price ranges. Call [phone] or visit [website] for a free quote.]"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does [primary service] take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "[Specific timeframe. Rush turnaround available if applicable.]"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you serve [nearby city]?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We serve [city list] and the surrounding area within [X] miles of [home city]."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is included in [primary service]?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "[List exactly what's included. Be specific about materials, labor, cleanup, etc.]"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer a warranty?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We offer a [X]-year warranty on [what it covers]. [Any conditions or exclusions.]"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I get a quote?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call [phone], email [email], or fill out the form at [website]. We typically respond within [X] business hours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes [Business Name] different from other [industry] companies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "[2-3 specific differentiators. Avoid generic claims.]"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What types of businesses do you work with?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "[List your ideal customers by industry or business type.]"
+      }
+    }
+  ]
+}
