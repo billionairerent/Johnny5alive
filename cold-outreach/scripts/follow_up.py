@@ -33,7 +33,7 @@ GMAIL_PASSWORD = os.environ.get("GMAIL_APP_PASSWORD", "")
 SMTP_HOST = "smtp.gmail.com"
 SMTP_PORT = 465
 
-SERVICE = "your service"  # <- edit to match your business
+SERVICE = "cinematic short-form video production"
 
 SEQUENCE = [
     {
@@ -89,7 +89,7 @@ SEQUENCE = [
     },
 ]
 
-SENDER_NAME = "Your Name"
+SENDER_NAME = "Jabari Okoro — ByteVision Reelworks | 901-546-1899"
 
 
 def load_latest_scored(scored_dir: Path) -> tuple[Path, list[dict]]:

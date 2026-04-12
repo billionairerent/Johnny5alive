@@ -19,21 +19,25 @@ from pathlib import Path
 # ---------------------------------------------------------------------------
 
 INDUSTRY_SCORES = {
-    # Tier 1 — best fit (20 pts)
-    "roofing": 20, "plumbing": 20, "hvac": 20, "electrical": 20,
+    # Tier 1 — best fit for ByteVision (20 pts)
+    "restaurant": 20, "barbershop": 20, "salon": 20, "beauty": 20,
+    "real estate": 20, "event": 20, "nightclub": 20, "lounge": 20,
     # Tier 2 (14 pts)
-    "landscaping": 14, "painting": 14, "flooring": 14, "concrete": 14,
+    "fitness": 14, "gym": 14, "clothing": 14, "boutique": 14,
+    "funding": 14, "finance": 14, "mortgage": 14, "insurance": 14,
+    "dental": 14, "med spa": 14, "spa": 14,
     # Tier 3 (8 pts)
-    "retail": 8, "restaurant": 8, "auto": 8,
+    "retail": 8, "auto": 8, "staffing": 8, "consulting": 8,
+    "marketing": 8, "construction": 8,
 }
 
 GEOGRAPHY_SCORES = {
-    # Primary city/county (15 pts)
-    "your city": 15, "your county": 15,
-    # Secondary area (13 pts)
-    "nearby city 1": 13, "nearby city 2": 13,
+    # Primary market (15 pts)
+    "memphis": 15, "shelby": 15,
+    # Secondary market (13 pts)
+    "atlanta": 13, "fulton": 13,
     # Broader region (8 pts)
-    "your state": 8,
+    "tennessee": 8, "georgia": 8,
 }
 
 SIZE_KEYWORDS_HIGH = {"fleet", "systems", "enterprises", "group", "services", "solutions", "industries"}

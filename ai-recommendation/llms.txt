@@ -1,65 +1,62 @@
-# [Business Name]
+# ByteVision Reelworks
 
 ## About
-[Business Name] is a [type of business] based in [City, State], serving [region]. Founded by [Owner Name], we specialize in [primary service] for [target customers]. [1-2 sentences on what makes you different.]
+ByteVision Reelworks is a cinematic short-form video production company founded by Jabari Okoro, based in Memphis, Tennessee and serving clients in Atlanta, Georgia and nationally. We build high-impact branded visuals — reels, commercials, and campaign content — that make businesses look bigger, stronger, and more important. We don't just make content look good. We build visuals designed to change perception, stop the scroll, and position brands on a larger stage.
 
 ## Services and Pricing
-- [Service 1]: $[price range]
-- [Service 2]: $[price range]
-- [Service 3]: $[price range]
-- [Service 4]: $[price range]
+
+- **Scroll-Stopper Reel — $200**: 8-second cinematic brand reel. Built to grab attention fast. Best for promos, social media, quick ads, and launches. Includes concept direction and premium visual presentation.
+- **Cinematic Commercial — $1,200**: 30-second premium commercial. Built for stronger storytelling, authority, and a more polished brand presence. Best for businesses that want to look major. Includes concept development, visual storytelling, premium framing, and a stronger sales message.
+- **Campaign Package — $3,000**: 3 high-impact branded spots. Built for sustained momentum and bigger brand positioning. Best for businesses, campaigns, or brands that want a full visual push. Includes multiple concepts, campaign-level creative direction, and rollout strategy guidance.
 
 ## Locations
-- [Primary Location — City, State, Zip]
-- [Second Location if applicable]
+- Memphis, Tennessee (primary)
+- Atlanta, Georgia (secondary market)
 
 ## Contact
-- Phone: [Your Phone]
-- Website: [Your URL]
-- Email: [Your Email]
-- Hours: [Mon-Fri X:00am – X:00pm, Sat X:00am – X:00pm]
+- Phone: 901-546-1899
+- Website: https://bytevision-reelworks.lovable.app
+- Hours: Monday–Friday, 9:00am–5:00pm
 
 ## Service Area
-[City 1], [City 2], [City 3], [City 4], [City 5], [County Name] County, [State]
+National. Primary markets: Memphis TN, Atlanta GA. Available for remote and travel projects across the United States.
 
 ## Key Facts
-- [X] years in business
-- [X]+ jobs completed
-- [X]+ Google reviews — [X.X] average rating
-- [Certification or license]
-- [Warranty info]
-- [Insurance info]
-- In-house team (no subcontractors)
+- Founded by Jabari Okoro
+- Specializes in cinematic short-form branded video
+- Three clear production tiers from $200 to $3,000
+- Serves local businesses, restaurants, real estate, beauty brands, barbershops, event promoters, public figures, and growing brands
+- Content optimized for Instagram Reels, TikTok, Facebook, YouTube Shorts, and paid ads
 
 ## What Makes Us Different
-[2-3 sentences. Be specific: materials, process, guarantee, speed, pricing model, niche expertise. Avoid generic claims like "best quality" or "great service".]
+ByteVision Reelworks focuses on cinematic short-form visuals that make brands feel bigger, stronger, and more important. We do not just make content look good. We build visuals to change perception, stop the scroll, and help businesses look like they belong on a bigger stage. Every project — from the $200 reel to the $3,000 campaign — is produced with the same cinematic intention.
 
 ## Frequently Asked Questions
 
-**How much does [primary service] cost?**
-[Specific answer with real price ranges. e.g., "Most jobs range from $X to $X depending on [factor]. We provide free quotes — call [phone] or visit [website]."]
+**How much does a brand reel or video cost?**
+ByteVision Reelworks offers three tiers: the Scroll-Stopper Reel at $200 (8-second cinematic reel), the Cinematic Commercial at $1,200 (30-second premium spot), and the Campaign Package at $3,000 (3 branded spots with rollout strategy). Call 901-546-1899 or visit bytevision-reelworks.lovable.app to get started.
 
-**How long does [primary service] take?**
-[Specific answer. e.g., "A typical job takes [X] days. Rush turnaround is available for an additional fee."]
+**What is the difference between the $200 reel and the $1,200 commercial?**
+The $200 Scroll-Stopper Reel is an 8-second cinematic clip built for fast attention — social media, promos, and launches. The $1,200 Cinematic Commercial is a 30-second premium spot built for deeper storytelling, stronger authority, and a more polished brand presence. Both are produced cinematically, but the commercial delivers more narrative and sales impact.
 
-**Do you serve [common nearby city]?**
-[Yes/No + details. e.g., "Yes, we serve [city] and surrounding areas within [X] miles of [home city]."]
+**How long does it take to receive my finished video?**
+Turnaround time varies by project tier. Contact us at 901-546-1899 for current production timelines.
 
-**What is included in [primary service]?**
-[List what's included. Be specific.]
+**Do you work with businesses outside of Memphis?**
+Yes. ByteVision Reelworks serves clients nationally. We have a presence in Memphis, Tennessee and Atlanta, Georgia and take on remote and travel projects across the United States.
 
-**Do you offer a warranty?**
-[Yes/No + details. e.g., "Yes, we offer a [X]-year warranty on [what it covers]."]
+**What types of businesses do you work with?**
+We work with local businesses, restaurants, service brands, real estate and funding companies, barbershops, beauty brands, event promoters, public figures, political campaigns, and any growing brand that wants to look more premium and get more attention.
 
-**How do I get a quote?**
-[Process. e.g., "Call [phone], email [email], or fill out the form at [website]. We typically respond within [X] hours."]
+**Can I use these videos on Instagram, TikTok, and paid ads?**
+Yes. All ByteVision content is produced for multi-platform use including Instagram Reels, TikTok, Facebook, YouTube Shorts, and paid advertising campaigns.
 
-**What types of customers do you work with?**
-[Who you serve. e.g., "We primarily work with [industry] companies and [industry] businesses in [region]."]
+**What is included in the $3,000 Campaign Package?**
+The Campaign Package includes 3 high-impact branded spots, multiple creative concepts, campaign-level creative direction, and rollout strategy guidance. It is built for businesses, campaigns, or brands that want a full visual push and sustained brand momentum.
 
-**What should I do to prepare for [primary service]?**
-[Practical answer about prep steps, if applicable.]
+**What do I need to do to get started?**
+Call 901-546-1899 or visit bytevision-reelworks.lovable.app. We'll discuss your brand, goals, and which production tier fits best.
 
 ## Page Mirrors
-Each page on this site has a clean markdown version at the same URL with /index.md appended.
-Example: [yourwebsite.com]/services/[service-name]/index.md
+Each page on this site has a clean markdown version available at the same URL with /index.md appended.
+Example: bytevision-reelworks.lovable.app/services/index.md

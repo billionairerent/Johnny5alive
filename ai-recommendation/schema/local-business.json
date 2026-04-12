@@ -1,41 +1,69 @@
 {
-  "_comment": "Paste this inside a <script type='application/ld+json'> tag in your <head>. Edit all [PLACEHOLDERS].",
+  "_comment": "Paste this inside a <script type='application/ld+json'> tag in your <head>.",
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "[Business Name]",
-  "description": "[One-sentence description of what you do]",
-  "url": "https://[yourwebsite.com]",
-  "telephone": "[+1-555-555-5555]",
-  "email": "[your@email.com]",
-  "priceRange": "[$$ or $$$]",
+  "name": "ByteVision Reelworks",
+  "description": "Cinematic short-form video production company specializing in branded reels, commercials, and campaign content that makes businesses look bigger and stop the scroll.",
+  "url": "https://bytevision-reelworks.lovable.app",
+  "telephone": "+19015461899",
+  "founder": {
+    "@type": "Person",
+    "name": "Jabari Okoro"
+  },
+  "priceRange": "$$",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "[123 Main St]",
-    "addressLocality": "[City]",
-    "addressRegion": "[State abbreviation]",
-    "postalCode": "[Zip]",
+    "addressLocality": "Memphis",
+    "addressRegion": "TN",
     "addressCountry": "US"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "[latitude]",
-    "longitude": "[longitude]"
   },
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      "opens": "08:00",
+      "opens": "09:00",
       "closes": "17:00"
     }
   ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "[4.8]",
-    "reviewCount": "[127]"
-  },
-  "sameAs": [
-    "https://www.google.com/maps/place/[your-listing]",
-    "https://www.facebook.com/[yourpage]"
-  ]
+  "areaServed": [
+    {
+      "@type": "State",
+      "name": "Tennessee"
+    },
+    {
+      "@type": "State",
+      "name": "Georgia"
+    },
+    {
+      "@type": "Country",
+      "name": "United States"
+    }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Video Production Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "Scroll-Stopper Reel",
+        "description": "8-second cinematic brand reel built to grab attention fast. Best for promos, social media, quick ads, and launches.",
+        "price": "200",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "name": "Cinematic Commercial",
+        "description": "30-second premium commercial built for stronger storytelling, authority, and a more polished brand presence.",
+        "price": "1200",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "name": "Campaign Package",
+        "description": "3 high-impact branded spots with campaign-level creative direction and rollout strategy guidance.",
+        "price": "3000",
+        "priceCurrency": "USD"
+      }
+    ]
+  }
 }

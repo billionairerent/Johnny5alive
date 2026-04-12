@@ -1,62 +1,30 @@
 {
-  "_comment": "Paste this inside a <script type='application/ld+json'> tag in your <head>. Edit all [PLACEHOLDERS].",
+  "_comment": "Paste this inside a <script type='application/ld+json'> tag in your <head>.",
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How much does [primary service] cost?",
+      "name": "How much does a brand reel or video cost?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "[Specific answer with real price ranges. Call [phone] or visit [website] for a free quote.]"
+        "text": "ByteVision Reelworks offers three tiers: the Scroll-Stopper Reel at $200 (8-second cinematic reel), the Cinematic Commercial at $1,200 (30-second premium spot), and the Campaign Package at $3,000 (3 branded spots with rollout strategy). Call 901-546-1899 to get started."
       }
     },
     {
       "@type": "Question",
-      "name": "How long does [primary service] take?",
+      "name": "What is the difference between the $200 reel and the $1,200 commercial?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "[Specific timeframe. Rush turnaround available if applicable.]"
+        "text": "The $200 Scroll-Stopper Reel is an 8-second cinematic clip built for fast attention on social media, promos, and launches. The $1,200 Cinematic Commercial is a 30-second premium spot built for deeper storytelling, stronger authority, and a more polished brand presence."
       }
     },
     {
       "@type": "Question",
-      "name": "Do you serve [nearby city]?",
+      "name": "Do you work with businesses outside of Memphis?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. We serve [city list] and the surrounding area within [X] miles of [home city]."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is included in [primary service]?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "[List exactly what's included. Be specific about materials, labor, cleanup, etc.]"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you offer a warranty?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. We offer a [X]-year warranty on [what it covers]. [Any conditions or exclusions.]"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I get a quote?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Call [phone], email [email], or fill out the form at [website]. We typically respond within [X] business hours."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What makes [Business Name] different from other [industry] companies?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "[2-3 specific differentiators. Avoid generic claims.]"
+        "text": "Yes. ByteVision Reelworks serves clients nationally. We are based in Memphis, Tennessee with a presence in Atlanta, Georgia and take remote and travel projects across the United States."
       }
     },
     {
@@ -64,7 +32,39 @@
       "name": "What types of businesses do you work with?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "[List your ideal customers by industry or business type.]"
+        "text": "We work with local businesses, restaurants, service brands, real estate and funding companies, barbershops, beauty brands, event promoters, public figures, political campaigns, and any growing brand that wants to look more premium and get more attention."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use these videos on Instagram, TikTok, and paid ads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. All ByteVision content is produced for multi-platform use including Instagram Reels, TikTok, Facebook, YouTube Shorts, and paid advertising campaigns."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is included in the $3,000 Campaign Package?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Campaign Package includes 3 high-impact branded spots, multiple creative concepts, campaign-level creative direction, and rollout strategy guidance. Built for businesses or brands that want a full visual push and sustained brand momentum."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes ByteVision Reelworks different from other video production companies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ByteVision Reelworks builds cinematic short-form visuals designed to change brand perception — not just look good. Every project is produced to stop the scroll and make businesses feel like they belong on a bigger stage, from the $200 reel to the $3,000 campaign."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I get started with ByteVision Reelworks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call 901-546-1899 or visit bytevision-reelworks.lovable.app. We'll discuss your brand, goals, and which production tier fits best."
       }
     }
   ]
