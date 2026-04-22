@@ -1,0 +1,4 @@
+Hi {{firstName}}, this is {{agentName}} reaching out about {{propertyAddress}}.
+Is now a good time to talk for a couple minutes?
+
+If not, just let me know what works.

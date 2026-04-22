@@ -1,0 +1,4 @@
+Hi {{firstName}}, this is {{agentName}} about your home search in
+{{targetArea}}. Got a few minutes to walk through what you're looking for?
+
+If now's not great, just reply with a better time.

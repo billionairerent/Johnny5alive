@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "WebhookPayload",
+  "type": "object",
+  "required": ["source", "receivedAt", "data"],
+  "properties": {
+    "source": { "type": "string" },
+    "receivedAt": { "type": "string" },
+    "eventType": { "type": ["string", "null"] },
+    "data": { "type": "object", "additionalProperties": true }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BuyerLead",
+  "type": "object",
+  "required": [
+    "leadId",
+    "createdAt",
+    "name",
+    "phone",
+    "targetArea",
+    "budget",
+    "downPayment",
+    "timeline",
+    "notes"
+  ],
+  "properties": {
+    "leadId": { "type": "string" },
+    "createdAt": { "type": "string" },
+    "name": { "type": "string" },
+    "phone": { "type": "string" },
+    "email": { "type": "string" },
+    "targetArea": { "type": "string" },
+    "budget": { "type": ["number", "string"] },
+    "downPayment": { "type": ["number", "string"] },
+    "monthlyIncome": { "type": ["number", "string", "null"] },
+    "creditSituation": { "type": ["string", "null"] },
+    "selfEmployed": { "type": ["boolean", "string", "null"] },
+    "timeline": { "type": "string" },
+    "leadSource": { "type": ["string", "null"] },
+    "assignedAgent": { "type": ["string", "null"] },
+    "notes": { "type": "string" }
+  }
+}

@@ -1,0 +1,6 @@
+Hi {{firstName}},
+
+Thanks for telling us about your search in {{targetArea}}. We have your
+information and will reach out soon with any matching options.
+
+— The team

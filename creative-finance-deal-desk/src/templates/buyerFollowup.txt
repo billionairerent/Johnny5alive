@@ -1,0 +1,8 @@
+Hi {{firstName}},
+
+Following up on your search in {{targetArea}}. Quick question:
+{{nextQuestion}}
+
+We work with owners directly so there may be options outside the bank route.
+
+— The team

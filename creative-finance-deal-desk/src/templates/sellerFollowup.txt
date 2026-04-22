@@ -1,0 +1,8 @@
+Hi {{firstName}},
+
+Just checking back on {{propertyAddress}}. No pressure — a quick question:
+{{nextQuestion}}
+
+Happy to work around your timeline whenever it makes sense.
+
+— The team

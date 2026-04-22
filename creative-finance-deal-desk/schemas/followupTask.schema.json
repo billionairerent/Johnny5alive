@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "FollowupTask",
+  "type": "object",
+  "required": [
+    "taskId",
+    "leadId",
+    "leadType",
+    "dueAt",
+    "channel",
+    "status",
+    "message"
+  ],
+  "properties": {
+    "taskId": { "type": "string" },
+    "leadId": { "type": "string" },
+    "leadType": { "type": "string", "enum": ["seller", "buyer"] },
+    "dueAt": { "type": "string" },
+    "channel": { "type": "string", "enum": ["sms", "email", "call"] },
+    "status": { "type": "string" },
+    "message": { "type": "string" },
+    "assignedAgent": { "type": ["string", "null"] },
+    "createdAt": { "type": "string" }
+  }
+}

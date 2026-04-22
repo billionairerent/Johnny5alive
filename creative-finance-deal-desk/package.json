@@ -1,0 +1,38 @@
+{
+  "name": "creative-finance-deal-desk",
+  "version": "0.1.0",
+  "description": "Creative Finance Deal Desk OS — lead intake, qualification, routing, follow-up, and closer handoff system for creative-finance real estate operations.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "jest --passWithNoTests",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "creative-finance",
+    "real-estate",
+    "lead-qualification",
+    "deal-desk",
+    "claude-code"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ajv": "^8.12.0",
+    "ajv-formats": "^2.1.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.0.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

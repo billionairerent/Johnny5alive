@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SellerLead",
+  "type": "object",
+  "required": [
+    "leadId",
+    "createdAt",
+    "name",
+    "phone",
+    "propertyAddress",
+    "askingPrice",
+    "timeline",
+    "flexibleTermsInterest",
+    "notes"
+  ],
+  "properties": {
+    "leadId": { "type": "string" },
+    "createdAt": { "type": "string" },
+    "name": { "type": "string" },
+    "phone": { "type": "string" },
+    "email": { "type": "string" },
+    "propertyAddress": { "type": "string" },
+    "askingPrice": { "type": ["number", "string"] },
+    "mortgageBalance": { "type": ["number", "string", "null"] },
+    "monthlyPayment": { "type": ["number", "string", "null"] },
+    "occupancy": { "type": ["string", "null"] },
+    "condition": { "type": ["string", "null"] },
+    "timeline": { "type": "string" },
+    "flexibleTermsInterest": { "type": "string" },
+    "leadSource": { "type": ["string", "null"] },
+    "assignedAgent": { "type": ["string", "null"] },
+    "notes": { "type": "string" }
+  }
+}

@@ -1,0 +1,8 @@
+Hi {{firstName}},
+
+Thanks for sharing details on {{propertyAddress}}. We have your information
+and will be in touch shortly.
+
+If anything changes on your timeline, just reply here.
+
+— The team
