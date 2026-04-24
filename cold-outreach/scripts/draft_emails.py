@@ -35,7 +35,7 @@ BUSINESS_NAME  = "ByteVision Reelworks"
 SERVICE        = "cinematic short-form video production — reels, commercials, and campaign content"
 SENDER_NAME    = "Jabari Okoro"
 SENDER_PHONE   = "901-546-1899"
-SENDER_WEBSITE = "bytevision-reelworks.lovable.app"
+SENDER_WEBSITE = "bytevisionreelworks.com"
 
 EMAIL_PROMPT = """You are writing a short cold email for {business_name}. We sell {service}.
 Write a personalized email to this company based on their website content.

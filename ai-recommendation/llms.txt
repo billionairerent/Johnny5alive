@@ -15,7 +15,7 @@ ByteVision Reelworks is a cinematic short-form video production company founded 
 
 ## Contact
 - Phone: 901-546-1899
-- Website: https://bytevision-reelworks.lovable.app
+- Website: https://bytevisionreelworks.com
 - Hours: Monday–Friday, 9:00am–5:00pm
 
 ## Service Area
@@ -34,7 +34,7 @@ ByteVision Reelworks focuses on cinematic short-form visuals that make brands fe
 ## Frequently Asked Questions
 
 **How much does a brand reel or video cost?**
-ByteVision Reelworks offers three tiers: the Scroll-Stopper Reel at $200 (8-second cinematic reel), the Cinematic Commercial at $1,200 (30-second premium spot), and the Campaign Package at $3,000 (3 branded spots with rollout strategy). Call 901-546-1899 or visit bytevision-reelworks.lovable.app to get started.
+ByteVision Reelworks offers three tiers: the Scroll-Stopper Reel at $200 (8-second cinematic reel), the Cinematic Commercial at $1,200 (30-second premium spot), and the Campaign Package at $3,000 (3 branded spots with rollout strategy). Call 901-546-1899 or visit bytevisionreelworks.com to get started.
 
 **What is the difference between the $200 reel and the $1,200 commercial?**
 The $200 Scroll-Stopper Reel is an 8-second cinematic clip built for fast attention — social media, promos, and launches. The $1,200 Cinematic Commercial is a 30-second premium spot built for deeper storytelling, stronger authority, and a more polished brand presence. Both are produced cinematically, but the commercial delivers more narrative and sales impact.
@@ -55,8 +55,8 @@ Yes. All ByteVision content is produced for multi-platform use including Instagr
 The Campaign Package includes 3 high-impact branded spots, multiple creative concepts, campaign-level creative direction, and rollout strategy guidance. It is built for businesses, campaigns, or brands that want a full visual push and sustained brand momentum.
 
 **What do I need to do to get started?**
-Call 901-546-1899 or visit bytevision-reelworks.lovable.app. We'll discuss your brand, goals, and which production tier fits best.
+Call 901-546-1899 or visit bytevisionreelworks.com. We'll discuss your brand, goals, and which production tier fits best.
 
 ## Page Mirrors
 Each page on this site has a clean markdown version available at the same URL with /index.md appended.
-Example: bytevision-reelworks.lovable.app/services/index.md
+Example: bytevisionreelworks.com/services/index.md
