@@ -7,7 +7,7 @@ on:
   workflow_dispatch:           # Manual trigger from GitHub website anytime
 
 jobs:
-  # ── Runs every Monday: search Yelp, scrape websites, save new leads ──────
+  # ── Runs every Monday + manual trigger: search Yelp, scrape websites ──────
   find-leads:
     if: github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && contains(github.event.schedule, '0 12'))
     runs-on: ubuntu-latest
@@ -47,11 +47,13 @@ jobs:
           git config user.email "bytevisionreelworks@gmail.com"
           git add cold-outreach/data/raw/ || true
           git diff --staged --quiet || git commit -m "Auto: new leads $(date +%Y-%m-%d)"
-          git push
+          git pull --rebase origin claude/setup-business-playbook-MNpJc || true
+          git push || true
 
-  # ── Runs Mon–Fri: detect replies, follow-ups, score, draft, send ──────────
+  # ── Runs Mon–Fri (waits for find-leads when both are triggered) ───────────
   send-emails:
-    if: github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && contains(github.event.schedule, '0 13'))
+    needs: find-leads
+    if: always() && (github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && contains(github.event.schedule, '0 13')))
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -101,4 +103,5 @@ jobs:
           git config user.email "bytevisionreelworks@gmail.com"
           git add cold-outreach/data/scored/ cold-outreach/logs/ cold-outreach/drafts/ || true
           git diff --staged --quiet || git commit -m "Auto: outreach run $(date +%Y-%m-%d)"
+          git pull --rebase origin claude/setup-business-playbook-MNpJc || true
           git push
