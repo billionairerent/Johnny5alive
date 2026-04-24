@@ -1,5 +1,27 @@
 [
   {
+    "company_name": "Memphis BBQ House",
+    "email": "info@memphisbbq.com",
+    "phone": "901-555-0002",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "memphisbbq.com",
+    "industry": "restaurant",
+    "reviews_count": "212",
+    "reviews_rating": "4.8",
+    "score": 52,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 7,
+      "digital": 10
+    },
+    "email_sent": true,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
     "company_name": "Central BBQ",
     "email": "eblondis@cbqmemphis.com",
     "phone": "901-767-4672",
@@ -83,7 +105,7 @@
       "size": 7,
       "digital": 10
     },
-    "email_sent": false,
+    "email_sent": true,
     "response_status": null,
     "follow_up_step": 0
   },
@@ -242,24 +264,24 @@
     "follow_up_step": 0
   },
   {
-    "company_name": "Memphis BBQ House",
-    "email": "info@memphisbbq.com",
-    "phone": "901-555-0002",
+    "company_name": "Example Restaurant",
+    "email": "owner@examplerestaurant.com",
+    "phone": "901-555-0001",
     "city": "Memphis",
     "state": "TN",
-    "website": "memphisbbq.com",
+    "website": "examplerestaurant.com",
     "industry": "restaurant",
-    "reviews_count": "212",
-    "reviews_rating": "4.8",
-    "score": 52,
+    "reviews_count": "87",
+    "reviews_rating": "4.5",
+    "score": 49,
     "grade": "A",
     "score_breakdown": {
       "industry": 20,
       "geography": 15,
-      "size": 7,
+      "size": 4,
       "digital": 10
     },
-    "email_sent": false,
+    "email_sent": true,
     "response_status": null,
     "follow_up_step": 0
   },
@@ -295,28 +317,6 @@
     "industry": "restaurant",
     "reviews_count": "62",
     "reviews_rating": "4.3",
-    "score": 49,
-    "grade": "A",
-    "score_breakdown": {
-      "industry": 20,
-      "geography": 15,
-      "size": 4,
-      "digital": 10
-    },
-    "email_sent": false,
-    "response_status": null,
-    "follow_up_step": 0
-  },
-  {
-    "company_name": "Example Restaurant",
-    "email": "owner@examplerestaurant.com",
-    "phone": "901-555-0001",
-    "city": "Memphis",
-    "state": "TN",
-    "website": "examplerestaurant.com",
-    "industry": "restaurant",
-    "reviews_count": "87",
-    "reviews_rating": "4.5",
     "score": 49,
     "grade": "A",
     "score_breakdown": {
@@ -369,7 +369,7 @@
       "size": 7,
       "digital": 5
     },
-    "email_sent": false,
+    "email_sent": true,
     "response_status": null,
     "follow_up_step": 0
   },
@@ -391,7 +391,7 @@
       "size": 7,
       "digital": 5
     },
-    "email_sent": false,
+    "email_sent": true,
     "response_status": null,
     "follow_up_step": 0
   },
@@ -457,7 +457,7 @@
       "size": 4,
       "digital": 5
     },
-    "email_sent": false,
+    "email_sent": true,
     "response_status": null,
     "follow_up_step": 0
   },
@@ -479,7 +479,7 @@
       "size": 4,
       "digital": 5
     },
-    "email_sent": false,
+    "email_sent": true,
     "response_status": null,
     "follow_up_step": 0
   }

@@ -178,5 +178,47 @@
     "status": "failed",
     "error": "[Errno 110] Connection timed out",
     "timestamp": "2026-04-24"
+  },
+  {
+    "to": "owner@examplerestaurant.com",
+    "subject": "Short-form video for Example Restaurant Memphis",
+    "status": "sent",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "info@memphisbbq.com",
+    "subject": "BBQ content that stops the scroll",
+    "status": "sent",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "serv@info.com",
+    "subject": "Memphis restaurant content that actually converts",
+    "status": "sent",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "east@theliquorstorediner.com",
+    "subject": "Memphis bar content that actually converts",
+    "status": "sent",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "louismartin641@gmail.com",
+    "subject": "Uncle Lou's Memphis spot deserves better video",
+    "status": "sent",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "roast@vicevirtuecoffee.com",
+    "subject": "Coffee brand that deserves better visuals",
+    "status": "sent",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "TheNorthEnd@comcast.net",
+    "subject": "Short-form video for Westy's Memphis location",
+    "status": "sent",
+    "timestamp": "2026-04-24"
   }
 ]
