@@ -1,0 +1,60 @@
+name: Daily Outreach — ByteVision Reelworks
+
+on:
+  schedule:
+    - cron: '0 13 * * 1-5'   # 8:00am CDT, Monday–Friday
+  workflow_dispatch:           # Manual trigger from GitHub website anytime
+
+jobs:
+  send-emails:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          ref: claude/setup-business-playbook-MNpJc
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install anthropic requests beautifulsoup4 imap-tools python-dotenv -q
+
+      - name: Create .env
+        run: |
+          cat > cold-outreach/.env << 'EOF'
+          ANTHROPIC_API_KEY=${{ secrets.ANTHROPIC_API_KEY }}
+          GMAIL_USER=${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD=${{ secrets.GMAIL_APP_PASSWORD }}
+          IMAP_HOST=imap.gmail.com
+          IMAP_PORT=993
+          EOF
+
+      - name: Detect replies
+        run: cd cold-outreach/scripts && python detect_replies.py || true
+
+      - name: Send follow-ups
+        run: cd cold-outreach/scripts && python follow_up.py --yes || true
+
+      - name: Score leads
+        run: cd cold-outreach/scripts && python score_leads.py
+
+      - name: Draft new emails
+        run: cd cold-outreach/scripts && python draft_emails.py --grade A --limit 20 || true
+
+      - name: Send emails
+        run: cd cold-outreach/scripts && python send_emails.py --limit 15 --yes
+
+      - name: Save state back to repo
+        run: |
+          git config user.name "ByteVision Bot"
+          git config user.email "bytevisionreelworks@gmail.com"
+          git add cold-outreach/data/scored/ cold-outreach/logs/ cold-outreach/drafts/ || true
+          git diff --staged --quiet || git commit -m "Auto: outreach run $(date +%Y-%m-%d)"
+          git push

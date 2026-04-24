@@ -1,0 +1,182 @@
+[
+  {
+    "to": "hvernon001@aol.com",
+    "status": "failed",
+    "error": "[Errno 97] Address family not supported by protocol",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "events@brazenrestaurantgroup.com",
+    "status": "failed",
+    "error": "[Errno 97] Address family not supported by protocol",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "eblondis@cbqmemphis.com",
+    "status": "failed",
+    "error": "[Errno 97] Address family not supported by protocol",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "info@cocozzamemphis.com",
+    "status": "failed",
+    "error": "[Errno 97] Address family not supported by protocol",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "flightmemphis@gmail.com",
+    "status": "failed",
+    "error": "[Errno 97] Address family not supported by protocol",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "info@globalcafememphis.com",
+    "status": "failed",
+    "error": "[Errno 97] Address family not supported by protocol",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "EatGoodGroceries@outlook.com",
+    "status": "failed",
+    "error": "[Errno 97] Address family not supported by protocol",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "darrin@enjoyam.com",
+    "status": "failed",
+    "error": "[Errno 97] Address family not supported by protocol",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "contactus@delimexicana.com",
+    "status": "failed",
+    "error": "[Errno 97] Address family not supported by protocol",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "mcewensonmonroe@bellsouth.net",
+    "status": "failed",
+    "error": "[Errno 97] Address family not supported by protocol",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "anna@hogsfly.com",
+    "status": "failed",
+    "error": "[Errno 97] Address family not supported by protocol",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "marketing@chefkellyenglish.com",
+    "status": "failed",
+    "error": "[Errno 97] Address family not supported by protocol",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "sagememphis94@gmail.com",
+    "status": "failed",
+    "error": "[Errno 97] Address family not supported by protocol",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "eat@tambolis.com",
+    "status": "failed",
+    "error": "[Errno 97] Address family not supported by protocol",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "contact@tcememphis.com",
+    "status": "failed",
+    "error": "[Errno 97] Address family not supported by protocol",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "hvernon001@aol.com",
+    "status": "failed",
+    "error": "[Errno 110] Connection timed out",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "events@brazenrestaurantgroup.com",
+    "status": "failed",
+    "error": "[Errno 110] Connection timed out",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "eblondis@cbqmemphis.com",
+    "status": "failed",
+    "error": "[Errno 110] Connection timed out",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "info@cocozzamemphis.com",
+    "status": "failed",
+    "error": "[Errno 110] Connection timed out",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "flightmemphis@gmail.com",
+    "status": "failed",
+    "error": "[Errno 110] Connection timed out",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "info@globalcafememphis.com",
+    "status": "failed",
+    "error": "[Errno 110] Connection timed out",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "EatGoodGroceries@outlook.com",
+    "status": "failed",
+    "error": "[Errno 110] Connection timed out",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "darrin@enjoyam.com",
+    "status": "failed",
+    "error": "[Errno 110] Connection timed out",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "contactus@delimexicana.com",
+    "status": "failed",
+    "error": "[Errno 110] Connection timed out",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "mcewensonmonroe@bellsouth.net",
+    "status": "failed",
+    "error": "[Errno 110] Connection timed out",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "anna@hogsfly.com",
+    "status": "failed",
+    "error": "[Errno 110] Connection timed out",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "marketing@chefkellyenglish.com",
+    "status": "failed",
+    "error": "[Errno 110] Connection timed out",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "sagememphis94@gmail.com",
+    "status": "failed",
+    "error": "[Errno 110] Connection timed out",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "eat@tambolis.com",
+    "status": "failed",
+    "error": "[Errno 110] Connection timed out",
+    "timestamp": "2026-04-24"
+  },
+  {
+    "to": "contact@tcememphis.com",
+    "status": "failed",
+    "error": "[Errno 110] Connection timed out",
+    "timestamp": "2026-04-24"
+  }
+]
