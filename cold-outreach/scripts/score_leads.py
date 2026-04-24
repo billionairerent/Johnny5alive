@@ -43,7 +43,7 @@ GEOGRAPHY_SCORES = {
 SIZE_KEYWORDS_HIGH = {"fleet", "systems", "enterprises", "group", "services", "solutions", "industries"}
 SIZE_KEYWORDS_MED  = {"inc", "llc", "corp", "co.", "company"}
 
-GRADE_THRESHOLDS = {"A": 55, "B": 35}   # below 35 = C
+GRADE_THRESHOLDS = {"A": 40, "B": 25}   # below 25 = C
 
 # ---------------------------------------------------------------------------
 
