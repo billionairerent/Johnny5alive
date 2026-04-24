@@ -16,6 +16,7 @@ import os
 import random
 import re
 import smtplib
+import socket
 import sys
 import time
 import argparse
@@ -92,7 +93,9 @@ def send_email(to: str, subject: str, body: str) -> None:
     msg["From"]    = GMAIL_USER
     msg["To"]      = to
     msg["Subject"] = subject
-    with smtplib.SMTP_SSL(SMTP_HOST, SMTP_PORT) as server:
+    # Resolve to IPv4 explicitly to avoid IPv6 issues in restricted environments
+    ip = socket.getaddrinfo(SMTP_HOST, SMTP_PORT, socket.AF_INET)[0][4][0]
+    with smtplib.SMTP_SSL(ip, SMTP_PORT) as server:
         server.login(GMAIL_USER, GMAIL_PASSWORD)
         server.sendmail(GMAIL_USER, to, msg.as_string())
 
