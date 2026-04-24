@@ -1,0 +1,13 @@
+# Credentials — never commit
+cold-outreach/.env
+**/.env
+
+# Data files with real leads
+cold-outreach/data/scored/
+cold-outreach/logs/
+cold-outreach/drafts/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
