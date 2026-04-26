@@ -22,6 +22,7 @@ INDUSTRY_SCORES = {
     # Tier 1 — best fit for ByteVision (20 pts)
     "restaurant": 20, "barbershop": 20, "salon": 20, "beauty": 20,
     "real estate": 20, "event": 20, "nightclub": 20, "lounge": 20,
+    "law firm": 20, "attorney": 20, "lawyer": 20, "legal": 20,
     # Tier 2 (14 pts)
     "fitness": 14, "gym": 14, "clothing": 14, "boutique": 14,
     "funding": 14, "finance": 14, "mortgage": 14, "insurance": 14,

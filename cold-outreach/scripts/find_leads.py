@@ -51,6 +51,7 @@ TARGET_CATEGORIES = [
     "eventplanning",  # Event Planners
     "fitness",        # Gyms & Studios
     "realestate",     # Real Estate Agencies
+    "lawyers",        # Law Firms
 ]
 
 # Category labels that appear in our CSV (more readable)
@@ -63,6 +64,7 @@ CATEGORY_LABELS = {
     "eventplanning": "event planning",
     "fitness":       "fitness",
     "realestate":    "real estate",
+    "lawyers":       "law firm",
 }
 
 EMAIL_RE = re.compile(r"[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}", re.IGNORECASE)
