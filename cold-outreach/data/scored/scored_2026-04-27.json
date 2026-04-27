@@ -369,10 +369,10 @@
       "size": 7,
       "digital": 10
     },
-    "email_sent": false,
+    "email_sent": true,
     "response_status": null,
     "follow_up_step": 0,
-    "last_sent_date": null
+    "last_sent_date": "2026-04-24"
   },
   {
     "company_name": "Dabbles Hair Company",
@@ -438,8 +438,7 @@
     },
     "email_sent": false,
     "response_status": null,
-    "follow_up_step": 0,
-    "last_sent_date": null
+    "follow_up_step": 0
   },
   {
     "company_name": "Flight Restaurant & Wine Bar",
@@ -461,8 +460,7 @@
     },
     "email_sent": false,
     "response_status": null,
-    "follow_up_step": 0,
-    "last_sent_date": null
+    "follow_up_step": 0
   },
   {
     "company_name": "Cocozza American Italian",
@@ -484,8 +482,7 @@
     },
     "email_sent": false,
     "response_status": null,
-    "follow_up_step": 0,
-    "last_sent_date": null
+    "follow_up_step": 0
   },
   {
     "company_name": "The Liquor Store",
@@ -505,10 +502,10 @@
       "size": 7,
       "digital": 10
     },
-    "email_sent": false,
+    "email_sent": true,
     "response_status": null,
     "follow_up_step": 0,
-    "last_sent_date": null
+    "last_sent_date": "2026-04-24"
   },
   {
     "company_name": "Bog & Barley",
@@ -530,8 +527,7 @@
     },
     "email_sent": false,
     "response_status": null,
-    "follow_up_step": 0,
-    "last_sent_date": null
+    "follow_up_step": 0
   },
   {
     "company_name": "Restaurant Iris",
@@ -553,8 +549,7 @@
     },
     "email_sent": false,
     "response_status": null,
-    "follow_up_step": 0,
-    "last_sent_date": null
+    "follow_up_step": 0
   },
   {
     "company_name": "Tamboli's",
@@ -576,8 +571,7 @@
     },
     "email_sent": false,
     "response_status": null,
-    "follow_up_step": 0,
-    "last_sent_date": null
+    "follow_up_step": 0
   },
   {
     "company_name": "Hog & Hominy",
@@ -598,9 +592,8 @@
       "digital": 10
     },
     "email_sent": false,
-    "response_status": "POSITIVE",
-    "follow_up_step": 0,
-    "last_sent_date": null
+    "response_status": null,
+    "follow_up_step": 0
   },
   {
     "company_name": "Las Tortugas",
@@ -622,8 +615,7 @@
     },
     "email_sent": false,
     "response_status": null,
-    "follow_up_step": 0,
-    "last_sent_date": null
+    "follow_up_step": 0
   },
   {
     "company_name": "Rendezvous",
@@ -645,8 +637,7 @@
     },
     "email_sent": false,
     "response_status": null,
-    "follow_up_step": 0,
-    "last_sent_date": null
+    "follow_up_step": 0
   },
   {
     "company_name": "McEwen's",
@@ -668,8 +659,7 @@
     },
     "email_sent": false,
     "response_status": null,
-    "follow_up_step": 0,
-    "last_sent_date": null
+    "follow_up_step": 0
   },
   {
     "company_name": "Reedy & Company",
@@ -821,10 +811,10 @@
       "size": 4,
       "digital": 10
     },
-    "email_sent": false,
+    "email_sent": true,
     "response_status": null,
     "follow_up_step": 0,
-    "last_sent_date": null
+    "last_sent_date": "2026-04-24"
   },
   {
     "company_name": "The Culinary Experience",
@@ -846,8 +836,7 @@
     },
     "email_sent": false,
     "response_status": null,
-    "follow_up_step": 0,
-    "last_sent_date": null
+    "follow_up_step": 0
   },
   {
     "company_name": "Good Groceries Cafe",
@@ -869,8 +858,7 @@
     },
     "email_sent": false,
     "response_status": null,
-    "follow_up_step": 0,
-    "last_sent_date": null
+    "follow_up_step": 0
   },
   {
     "company_name": "Gus's World Famous Fried Chicken",
@@ -1794,8 +1782,7 @@
     },
     "email_sent": false,
     "response_status": null,
-    "follow_up_step": 0,
-    "last_sent_date": null
+    "follow_up_step": 0
   },
   {
     "company_name": "Uncle Lou's",
@@ -1815,10 +1802,10 @@
       "size": 7,
       "digital": 5
     },
-    "email_sent": false,
+    "email_sent": true,
     "response_status": null,
     "follow_up_step": 0,
-    "last_sent_date": null
+    "last_sent_date": "2026-04-24"
   },
   {
     "company_name": "Westy's",
@@ -1838,10 +1825,10 @@
       "size": 7,
       "digital": 5
     },
-    "email_sent": false,
+    "email_sent": true,
     "response_status": null,
     "follow_up_step": 0,
-    "last_sent_date": null
+    "last_sent_date": "2026-04-24"
   },
   {
     "company_name": "Bar-B-Q Shop",
@@ -1863,8 +1850,7 @@
     },
     "email_sent": false,
     "response_status": null,
-    "follow_up_step": 0,
-    "last_sent_date": null
+    "follow_up_step": 0
   },
   {
     "company_name": "McIlhinney Law Group",
@@ -1885,6 +1871,28 @@
       "digital": 5
     },
     "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Atlanta Barber Company",
+    "email": "fletch846@gmail.com",
+    "phone": "770-304-6708",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "atlantabarberco.com",
+    "industry": "Barbershop",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 46,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 8,
+      "digital": 5
+    },
+    "email_sent": true,
     "response_status": null,
     "follow_up_step": 0
   },
@@ -4878,8 +4886,7 @@
     },
     "email_sent": false,
     "response_status": null,
-    "follow_up_step": 0,
-    "last_sent_date": null
+    "follow_up_step": 0
   },
   {
     "company_name": "Vice & Virtue Coffee",
@@ -4899,10 +4906,10 @@
       "size": 4,
       "digital": 5
     },
-    "email_sent": false,
+    "email_sent": true,
     "response_status": null,
     "follow_up_step": 0,
-    "last_sent_date": null
+    "last_sent_date": "2026-04-24"
   },
   {
     "company_name": "Serv Restaurant",
@@ -4922,10 +4929,10 @@
       "size": 4,
       "digital": 5
     },
-    "email_sent": false,
+    "email_sent": true,
     "response_status": null,
     "follow_up_step": 0,
-    "last_sent_date": null
+    "last_sent_date": "2026-04-24"
   },
   {
     "company_name": "Mary Mac's Tea Room",
@@ -9988,6 +9995,931 @@
     "follow_up_step": 0
   },
   {
+    "company_name": "Memphis' Finest Barbershop",
+    "email": "info@memphisfinestbarbershop.com",
+    "phone": "901-737-2887",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "memphisfinestbarbershop.com",
+    "industry": "Barbershop",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": true,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "On The Spot Cuts",
+    "email": "onthespot1980@yahoo.com",
+    "phone": "901-634-5497",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "onthespotcuts.com",
+    "industry": "Barbershop",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": true,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Hero & Sage",
+    "email": "heroandsage901@gmail.com",
+    "phone": "901-206-2269",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "heroandsage.com",
+    "industry": "Hair Salon",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": true,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Salon 387",
+    "email": "info@salon387memphis.com",
+    "phone": "901-288-6208",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "salon387memphis.com",
+    "industry": "Hair Salon",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": true,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Great Lengths Hair Salon",
+    "email": "greatlengthsmemphis@gmail.com",
+    "phone": "901-848-2314",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "greatlengthsmemphis.com",
+    "industry": "Hair Salon",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": true,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Salon d\u00e9 Coupe",
+    "email": "salondecoupememphis@gmail.com",
+    "phone": "901-574-0052",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "salondecoupememphis.com",
+    "industry": "Hair Salon",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": true,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Vanity Salon",
+    "email": "vanitysalonmemphis@gmail.com",
+    "phone": "901-373-8182",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "vanitysalon.com",
+    "industry": "Hair Salon",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Cutesy Nails and Spa",
+    "email": "julie.nguyen0315@yahoo.com",
+    "phone": "901-289-2168",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "cutesynailsandspa.com",
+    "industry": "Beauty Spa",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": true,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "VSL Nail Spa 8",
+    "email": "Suongnguyen.dmt@gmail.com",
+    "phone": "901-425-3430",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "vsl-nail-spa-8.com",
+    "industry": "Beauty Spa",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Nail Club",
+    "email": "envynails110@yahoo.com",
+    "phone": "901-480-8291",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "nailclubmemphis.com",
+    "industry": "Beauty Spa",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": true,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Modern Nail",
+    "email": "kevinsnails@yahoo.com",
+    "phone": "901-433-9102",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "modernnailmemphis.com",
+    "industry": "Beauty Spa",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": true,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Sonek's Medical Aesthetics Spa",
+    "email": "soneksdayspa1@gmail.com",
+    "phone": "901-767-9877",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "soneksmedspa.com",
+    "industry": "Beauty Spa",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": true,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Sneed Medispa & Wellness",
+    "email": "sneedmedspa@gmail.com",
+    "phone": "901-236-7722",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "sneedmedspa.com",
+    "industry": "Beauty Spa",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": true,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Royalty Wellness Spa",
+    "email": "appointment@royaltywellnessspa.com",
+    "phone": "901-410-8905",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "royaltywellnessspa.com",
+    "industry": "Beauty Spa",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": true,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "University Club Spa (Lucy Morgan)",
+    "email": "lucynjason@gmail.com",
+    "phone": "901-487-1372",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "ucmclub.com",
+    "industry": "Beauty Spa",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "University Club Spa (Vincent Miller)",
+    "email": "vincentmillerlmt@gmail.com",
+    "phone": "901-409-0196",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "ucmclub.com",
+    "industry": "Beauty Spa",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Wanderlust Wax Bar",
+    "email": "wanderlustwaxbar@gmail.com",
+    "phone": "901-264-4177",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "wanderlustwaxbar.com",
+    "industry": "Beauty Spa",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Westy's",
+    "email": "TheNorthEnd@comcast.net",
+    "phone": "901-543-3278",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "westysmemphis.com",
+    "industry": "Restaurant",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": true,
+    "response_status": null,
+    "follow_up_step": 0,
+    "last_sent_date": "2026-04-24"
+  },
+  {
+    "company_name": "Best Wings of Memphis",
+    "email": "info@bestwingsofmemphis.com",
+    "phone": "901-458-7711",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "bestwingsofmemphis.com",
+    "industry": "Restaurant",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": true,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Prive Restaurant",
+    "email": "priveofmemphis@gmail.com",
+    "phone": "901-552-4760",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "priveofmemphis.com",
+    "industry": "Restaurant",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": true,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Bella Poggio Events",
+    "email": "bellapoggioevents@gmail.com",
+    "phone": "901-338-0504",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "bellapoggioevents.com",
+    "industry": "Event Planner",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Infinity Events",
+    "email": "emma@infinityeventsmemphis.com",
+    "phone": "901-412-7451",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "infinityeventsmemphis.com",
+    "industry": "Event Planner",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Southern Event Planners",
+    "email": "events@southerneventplanners.com",
+    "phone": "901-757-9339",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "southerneventplanners.com",
+    "industry": "Event Planner",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Jewels Event Planning",
+    "email": "JewelsEventPlanning@gmail.com",
+    "phone": "731-613-8042",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "jewelseventplanning.com",
+    "industry": "Event Planner",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Law Office of Darrell J. O'Neal",
+    "email": "domemphislaw@darrelloneal.com",
+    "phone": "901-345-8009",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "darrelloneal.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Mendelson Law Firm",
+    "email": "info@lawmemphis.com",
+    "phone": "901-763-2500",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "lawmemphis.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Robert O. Hyde \u2013 Ware Jones Realtors",
+    "email": "robhyde712@gmail.com",
+    "phone": "901-282-9466",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "warejones.com",
+    "industry": "Real Estate",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "David Tester \u2013 Marx-Bensdorf Realtors",
+    "email": "dtester@m-brealtors.com",
+    "phone": "901-351-3439",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "m-brealtors.com",
+    "industry": "Real Estate",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Grayson Cho Andrews",
+    "email": "gandrews@bpjlaw.com",
+    "phone": "901-524-5144",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "bpjlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Maria M. Bartlett",
+    "email": "mbartlett@bpjlaw.com",
+    "phone": "901-524-5177",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "bpjlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Nathan A. Bicks",
+    "email": "nbicks@bpjlaw.com",
+    "phone": "901-524-5146",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "bpjlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Beth Weems Bradley",
+    "email": "bbradley@bpjlaw.com",
+    "phone": "901-524-5133",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "bpjlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Taylor A. Cates",
+    "email": "tacates@bpjlaw.com",
+    "phone": "901-524-5165",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "bpjlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "John J. Cook",
+    "email": "jcook@bpjlaw.com",
+    "phone": "901-524-5143",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "bpjlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "LeeAnne M. Cox",
+    "email": "lcox@bpjlaw.com",
+    "phone": "901-524-5171",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "bpjlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Marshall T. Cox",
+    "email": "mcox@bpjlaw.com",
+    "phone": "901-524-5114",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "bpjlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Jef Feibelman",
+    "email": "jfeibelman@bpjlaw.com",
+    "phone": "901-524-5109",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "bpjlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "R. Porter Feild",
+    "email": "pfeild@bpjlaw.com",
+    "phone": "901-524-5126",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "bpjlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Reagan Taylor Fondren",
+    "email": "rfondren@bpjlaw.com",
+    "phone": "901-524-5083",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "bpjlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Thomas E. Fridy",
+    "email": "tfridy@bpjlaw.com",
+    "phone": "901-524-5134",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "bpjlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Tannera George Gibson",
+    "email": "tgibson@bpjlaw.com",
+    "phone": "901-524-5152",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "bpjlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Molly Glover",
+    "email": "mglover@bpjlaw.com",
+    "phone": "901-524-5137",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "bpjlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 40,
+    "grade": "A",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
     "company_name": "Sport Clips Haircuts of Memphis - Midtown",
     "email": "",
     "phone": "(901) 310-4355",
@@ -11280,6 +12212,974 @@
       "geography": 13,
       "size": 2,
       "digital": 3
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Blue Ridge Grill",
+    "email": "reservations@libertyhousemail.com",
+    "phone": "404-233-5030",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "blueridgegrill.com",
+    "industry": "Restaurant",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Marcel",
+    "email": "marcelatl@rocketfarmrestaurants.com",
+    "phone": "404-665-4555",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "marcelatl.com",
+    "industry": "Restaurant",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Trader Vic's Atlanta",
+    "email": "maurice.pinder@hilton.com",
+    "phone": "404-221-6339",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "tradervicsatl.com",
+    "industry": "Restaurant",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Elysian Studio ATL",
+    "email": "Kayluh2009@icloud.com",
+    "phone": "727-642-4470",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "elysianstudioatl.com",
+    "industry": "Beauty Studio",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Elaine Sterling Spa",
+    "email": "spa@elainesterling.com",
+    "phone": "404-256-5228",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "elainesterling.com",
+    "industry": "Beauty Spa",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Royal Bliss Med Spa",
+    "email": "royalblissmedspa@gmail.com",
+    "phone": "470-586-8213",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "royalblissmedspa.com",
+    "industry": "Beauty Spa",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Great Atlanta Barbershop",
+    "email": "atlantabarbershopatl@gmail.com",
+    "phone": "404-205-5001",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "greatatlantabarbershop.com",
+    "industry": "Barbershop",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Phase 3 Barber Shop",
+    "email": "info@phase3barbershop.com",
+    "phone": "770-406-7504",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "phase3barbershop.com",
+    "industry": "Barbershop",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "All Things Love Events",
+    "email": "info@atlevents.co",
+    "phone": "678-879-5408",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "atlevents.co",
+    "industry": "Event Planner",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Lemiga Events",
+    "email": "info@lemiga.com",
+    "phone": "404-704-0725",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "lemiga.com",
+    "industry": "Event Planner",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Artistique Events",
+    "email": "Support@ArtistiqueEvents.com",
+    "phone": "770-404-6800",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "artistiqueevents.com",
+    "industry": "Event Planner",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Events of a Lifetime Productions",
+    "email": "gillian@eventsofalifetimeatlanta.com",
+    "phone": "770-595-9115",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "eventsofalifetimeproductions.com",
+    "industry": "Event Planner",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Park Avenue Events",
+    "email": "hester@parkavenue-events.com",
+    "phone": "770-827-4050",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "parkavenue-events.com",
+    "industry": "Event Planner",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Irene Tyndale Events",
+    "email": "events@irenetyndale.com",
+    "phone": "678-439-1114",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "irenetyndale.com",
+    "industry": "Event Planner",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Alston & Bird \u2013 Janine Brown",
+    "email": "janine.brown@alston.com",
+    "phone": "404-881-7834",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "alston.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Chamberlain Hrdlicka \u2013 General Contact",
+    "email": "firm@chamberlainlaw.com",
+    "phone": "404-659-1410",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "chamberlainlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Bonnie J. Lewis",
+    "email": "bonnie.lewis@chamberlainlaw.com",
+    "phone": "404-658-5430",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "chamberlainlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Darrell James \u2013 DMZ Realty & Associates",
+    "email": "dmzrealtyassociates@gmail.com",
+    "phone": "404-379-8422",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "dmzrealtyassociates.com",
+    "industry": "Real Estate",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Peggy Hibbert",
+    "email": "peggy@atlantafinehomes.com",
+    "phone": "404-444-0192",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "atlantafinehomes.com",
+    "industry": "Real Estate",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Kevin Grieco",
+    "email": "kevin@atlantaskyrise.com",
+    "phone": "404-822-4156",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "atlantaskyrise.com",
+    "industry": "Real Estate",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "David D. Aughtry",
+    "email": "david.aughtry@chamberlainlaw.com",
+    "phone": "404-658-5486",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "chamberlainlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Scott A. Augustine",
+    "email": "scott.augustine@chamberlainlaw.com",
+    "phone": "404-658-5431",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "chamberlainlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Carol A. Conroy",
+    "email": "Carol.Conroy@chamberlainlaw.com",
+    "phone": "404-588-3565",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "chamberlainlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Brandon D. Cox",
+    "email": "brandon.cox@chamberlainlaw.com",
+    "phone": "404-588-3422",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "chamberlainlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Tom Cullinan",
+    "email": "tom.cullinan@chamberlainlaw.com",
+    "phone": "404-658-5450",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "chamberlainlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Emily A. Dabney",
+    "email": "Emily.Dabney@chamberlainlaw.com",
+    "phone": "404-658-5481",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "chamberlainlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Preston O. Eagan",
+    "email": "preston.eagan@chamberlainlaw.com",
+    "phone": "404-658-5386",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "chamberlainlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Drew V. Greene",
+    "email": "drew.greene@chamberlainlaw.com",
+    "phone": "404-658-5408",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "chamberlainlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Alyssa G. Gregory",
+    "email": "alyssa.gregory@chamberlainlaw.com",
+    "phone": "404-588-3438",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "chamberlainlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "John C. Guin",
+    "email": "john.guin@chamberlainlaw.com",
+    "phone": "404-588-3574",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "chamberlainlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "John W. Hackney",
+    "email": "john.hackney@chamberlainlaw.com",
+    "phone": "404-658-5436",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "chamberlainlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Jasen Hanson",
+    "email": "Jasen.Hanson@chamberlainlaw.com",
+    "phone": "404-658-5473",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "chamberlainlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Thomas E. Jones Jr.",
+    "email": "t.jones@chamberlainlaw.com",
+    "phone": "404-658-5432",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "chamberlainlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Nicholas N. Kemper",
+    "email": "nicholas.kemper@chamberlainlaw.com",
+    "phone": "404-658-5471",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "chamberlainlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "J. Scot Kirkpatrick",
+    "email": "scot.kirkpatrick@chamberlainlaw.com",
+    "phone": "404-658-5421",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "chamberlainlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Samuel T. Kuzniewski",
+    "email": "sam.kuzniewski@chamberlainlaw.com",
+    "phone": "404-658-5456",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "chamberlainlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Kristen S. Lowther",
+    "email": "kristen.lowther@chamberlainlaw.com",
+    "phone": "404-588-3432",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "chamberlainlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Charlsie E. Mann",
+    "email": "charlsie.mann@chamberlainlaw.com",
+    "phone": "404-658-5390",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "chamberlainlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Joan M. McCallum",
+    "email": "joan.mccallum@chamberlainlaw.com",
+    "phone": "404-658-5424",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "chamberlainlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Patrick J. McCann Jr.",
+    "email": "patrick.mccann@chamberlainlaw.com",
+    "phone": "404-588-3568",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "chamberlainlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Keegan McCaster",
+    "email": "keegan.mccaster@chamberlainlaw.com",
+    "phone": "404-588-3429",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "chamberlainlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Matthew J. Morton",
+    "email": "matthew.morton@chamberlainlaw.com",
+    "phone": "404-588-3567",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "chamberlainlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Andrew Mullendore",
+    "email": "Andrew.Mullendore@chamberlainlaw.com",
+    "phone": "404-658-5459",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "chamberlainlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Charles Talbot Nunnally III",
+    "email": "t.nunnally@chamberlainlaw.com",
+    "phone": "404-658-5437",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "chamberlainlaw.com",
+    "industry": "Law Firm",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 38,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
     },
     "email_sent": false,
     "response_status": null,
@@ -12892,6 +14792,28 @@
     "follow_up_step": 0
   },
   {
+    "company_name": "Bendy Beast Fitness",
+    "email": "hey@bendybeast.com",
+    "phone": "901-519-2189",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "bendybeast.com",
+    "industry": "Fitness Studio",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 34,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 14,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
     "company_name": "Germantown Commissary",
     "email": "",
     "phone": "(901) 754-5540",
@@ -13392,6 +15314,50 @@
       "geography": 2,
       "size": 7,
       "digital": 3
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "ProjectBody ATL",
+    "email": "claudiapilates@projectbodyatl.com",
+    "phone": "470-819-8804",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "projectbodyatl.com",
+    "industry": "Fitness Studio",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 32,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 14,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "PlateSculpt",
+    "email": "hello@platesculpt.com",
+    "phone": "470-250-4570",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "platesculpt.com",
+    "industry": "Fitness Studio",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 32,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 14,
+      "geography": 13,
+      "size": 0,
+      "digital": 5
     },
     "email_sent": false,
     "response_status": null,
@@ -15262,6 +17228,160 @@
       "geography": 2,
       "size": 2,
       "digital": 3
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Ramirez Grooming",
+    "email": "heronramirez14@gmail.com",
+    "phone": "901-618-3002",
+    "city": "Bartlett",
+    "state": "TN",
+    "website": "ramirezgrooming.com",
+    "industry": "Barbershop",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 27,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 2,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Closer Look Barbershop",
+    "email": "Closerlook1998@gmail.com",
+    "phone": "901-221-8374",
+    "city": "Collierville",
+    "state": "TN",
+    "website": "closerlookbarbershop.com",
+    "industry": "Barbershop",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 27,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 2,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Halo Salon",
+    "email": "info@halo.salon",
+    "phone": "901-203-4153",
+    "city": "Rossville",
+    "state": "TN",
+    "website": "halo.salon",
+    "industry": "Hair Salon",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 27,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 2,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Kesia Studio",
+    "email": "kesiastudio35@gmail.com",
+    "phone": "901-650-9487",
+    "city": "Southaven",
+    "state": "MS",
+    "website": "kesiastudio.com",
+    "industry": "Hair Salon",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 27,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 2,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Leigh Lamb \u2013 The FIRM Memphis Real Estate",
+    "email": "LeighL@thefirmmemphis.com",
+    "phone": "615-948-4406",
+    "city": "Germantown",
+    "state": "TN",
+    "website": "thefirmmemphis.com",
+    "industry": "Real Estate",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 27,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 2,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "The Salty Mane Hair Co.",
+    "email": "bookings@thesaltymane.com",
+    "phone": "678-648-6010",
+    "city": "Alpharetta",
+    "state": "GA",
+    "website": "thesaltymane.com",
+    "industry": "Hair Salon",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 27,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 2,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Salon Posta",
+    "email": "frontdesk@salonposta.com",
+    "phone": "770-415-2221",
+    "city": "Marietta",
+    "state": "GA",
+    "website": "salonposta.com",
+    "industry": "Hair Salon",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 27,
+    "grade": "B",
+    "score_breakdown": {
+      "industry": 20,
+      "geography": 2,
+      "size": 0,
+      "digital": 5
     },
     "email_sent": false,
     "response_status": null,
@@ -17424,6 +19544,50 @@
     "follow_up_step": 0
   },
   {
+    "company_name": "CrossFit Memphis",
+    "email": "info@factionsc.com",
+    "phone": "901-246-9451",
+    "city": "Cordova",
+    "state": "TN",
+    "website": "factionsc.com",
+    "industry": "Fitness Studio",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 21,
+    "grade": "C",
+    "score_breakdown": {
+      "industry": 14,
+      "geography": 2,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Pinnacle Fitness Center",
+    "email": "decatur@pinnaclefitnesscenter.com",
+    "phone": "404-855-5569",
+    "city": "Decatur",
+    "state": "GA",
+    "website": "pinnaclefitnesscenter.com",
+    "industry": "Fitness Studio",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 21,
+    "grade": "C",
+    "score_breakdown": {
+      "industry": 14,
+      "geography": 2,
+      "size": 0,
+      "digital": 5
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
     "company_name": "Olive Branch Family YMCA",
     "email": "",
     "phone": "(662) 890-9622",
@@ -17462,6 +19626,28 @@
       "geography": 2,
       "size": 2,
       "digital": 3
+    },
+    "email_sent": false,
+    "response_status": null,
+    "follow_up_step": 0
+  },
+  {
+    "company_name": "Belle Tavern",
+    "email": "belletavern@gmail.com",
+    "phone": "901-433-9851",
+    "city": "Memphis",
+    "state": "TN",
+    "website": "belletavern.com",
+    "industry": "Nightlife",
+    "reviews_count": "",
+    "reviews_rating": "",
+    "score": 20,
+    "grade": "C",
+    "score_breakdown": {
+      "industry": 0,
+      "geography": 15,
+      "size": 0,
+      "digital": 5
     },
     "email_sent": false,
     "response_status": null,
