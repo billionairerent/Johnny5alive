@@ -111,34 +111,24 @@ def yelp_search(location: str, category: str, limit: int = 50) -> list:
     return results
 
 
-# ── Website discovery via DuckDuckGo ─────────────────────────────────────────
+# ── Website discovery via Yelp business detail API ───────────────────────────
 
-SKIP_DOMAINS = {
-    "yelp.com", "google.com", "facebook.com", "instagram.com", "twitter.com",
-    "tripadvisor.com", "yellowpages.com", "bbb.org", "linkedin.com",
-    "mapquest.com", "foursquare.com", "tiktok.com", "grubhub.com",
-    "doordash.com", "ubereats.com", "opentable.com",
-}
-
-
-def find_website(name: str, city: str, state: str) -> str:
-    query = f'"{name}" {city} {state}'
+def find_website(yelp_id: str) -> str:
+    """Fetch the actual business website URL from Yelp's detail endpoint."""
+    if not yelp_id:
+        return ""
     try:
         r = requests.get(
-            "https://duckduckgo.com/html/",
-            params={"q": query},
-            headers={"User-Agent": UA},
+            f"https://api.yelp.com/v3/businesses/{yelp_id}",
+            headers={"Authorization": f"Bearer {YELP_API_KEY}"},
             timeout=10,
         )
-        soup = BeautifulSoup(r.text, "html.parser")
-        for tag in soup.select(".result__url"):
-            raw = tag.get_text(strip=True).lower()
-            if not any(d in raw for d in SKIP_DOMAINS):
-                url = raw if raw.startswith("http") else "https://" + raw
-                return url
+        r.raise_for_status()
+        data = r.json()
+        # Yelp detail returns website URL when available
+        return data.get("website", "") or data.get("url", "")
     except Exception:
-        pass
-    return ""
+        return ""
 
 
 # ── Email extraction ──────────────────────────────────────────────────────────
@@ -247,11 +237,14 @@ def main():
                 biz_city  = biz.get("location", {}).get("city", city)
                 biz_state = biz.get("location", {}).get("state", state)
 
-                # Try to find website + email
-                print(f"    {name} — searching for website...")
-                website = find_website(name, biz_city, biz_state)
-                email   = extract_email(website) if website else ""
-                time.sleep(1.5)  # Be polite to DuckDuckGo
+                # Try to find website + email via Yelp detail API
+                yelp_id = biz.get("id", "")
+                website = find_website(yelp_id)
+                # Strip Yelp's own URL if that's all we got
+                if "yelp.com" in website:
+                    website = ""
+                email = extract_email(website) if website else ""
+                time.sleep(0.5)
 
                 row = {
                     "company_name":   name,

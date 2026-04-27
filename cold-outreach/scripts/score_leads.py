@@ -153,6 +153,26 @@ def process_file(csv_path: Path) -> list[dict]:
     return results
 
 
+def load_prior_state(scored_dir: Path) -> dict:
+    """Load email_sent / response_status / follow_up_step from the most recent scored JSON."""
+    files = sorted(scored_dir.glob("scored_*.json"), reverse=True)
+    state: dict = {}  # keyed by email (lowercase)
+    for f in files:
+        try:
+            for lead in json.loads(f.read_text()):
+                email = lead.get("email", "").strip().lower()
+                if email and email not in state:
+                    state[email] = {
+                        "email_sent":     lead.get("email_sent", False),
+                        "response_status": lead.get("response_status"),
+                        "follow_up_step": lead.get("follow_up_step", 0),
+                        "last_sent_date": lead.get("last_sent_date"),
+                    }
+        except Exception:
+            pass
+    return state
+
+
 def main():
     parser = argparse.ArgumentParser(description="Score leads from CSV files")
     parser.add_argument("--input", help="Path to a specific CSV file (default: all CSVs in data/raw/)")
@@ -172,10 +192,20 @@ def main():
         print("No CSV files found. Place lead files in data/raw/ or use --input.")
         sys.exit(1)
 
+    # Load previous send/follow-up state so we don't reset it on re-score
+    prior_state = load_prior_state(scored_dir)
+    print(f"Loaded prior state for {len(prior_state)} emailed leads.")
+
     all_leads = []
     for f in csv_files:
         print(f"Processing {f.name}...")
         all_leads.extend(process_file(f))
+
+    # Restore state for leads we've already contacted
+    for lead in all_leads:
+        email = lead.get("email", "").strip().lower()
+        if email and email in prior_state:
+            lead.update(prior_state[email])
 
     all_leads.sort(key=lambda x: x["score"], reverse=True)
 
@@ -187,8 +217,9 @@ def main():
     for lead in all_leads:
         grades[lead["grade"]] += 1
 
+    already_sent = sum(1 for l in all_leads if l.get("email_sent"))
     print(f"\nScored {len(all_leads)} leads -> {out_path.name}")
-    print(f"  Grade A: {grades['A']}")
+    print(f"  Grade A: {grades['A']}  |  Already sent: {already_sent}")
     print(f"  Grade B: {grades['B']}")
     print(f"  Grade C: {grades['C']}")
 
