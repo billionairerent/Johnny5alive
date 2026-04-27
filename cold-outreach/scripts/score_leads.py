@@ -153,23 +153,36 @@ def process_file(csv_path: Path) -> list[dict]:
     return results
 
 
-def load_prior_state(scored_dir: Path) -> dict:
-    """Load email_sent / response_status / follow_up_step from the most recent scored JSON."""
-    files = sorted(scored_dir.glob("scored_*.json"), reverse=True)
+def load_prior_state(logs_dir: Path, scored_dir: Path) -> dict:
+    """Build state from send logs (truth) + scored JSONs (follow-up step / response)."""
     state: dict = {}  # keyed by email (lowercase)
-    for f in files:
+
+    # 1. Send logs are the definitive truth for email_sent + last_sent_date
+    for log_file in sorted(logs_dir.glob("send_log_*.json")):
+        try:
+            for entry in json.loads(log_file.read_text()):
+                email = entry.get("to", "").strip().lower()
+                if email and entry.get("status") == "sent":
+                    if email not in state:
+                        state[email] = {}
+                    state[email]["email_sent"] = True
+                    state[email]["last_sent_date"] = entry.get("timestamp")
+        except Exception:
+            pass
+
+    # 2. Scored JSONs carry follow_up_step and response_status
+    for f in sorted(scored_dir.glob("scored_*.json"), reverse=True):
         try:
             for lead in json.loads(f.read_text()):
                 email = lead.get("email", "").strip().lower()
-                if email and email not in state:
-                    state[email] = {
-                        "email_sent":     lead.get("email_sent", False),
-                        "response_status": lead.get("response_status"),
-                        "follow_up_step": lead.get("follow_up_step", 0),
-                        "last_sent_date": lead.get("last_sent_date"),
-                    }
+                if email and email in state:
+                    if "follow_up_step" not in state[email]:
+                        state[email]["follow_up_step"] = lead.get("follow_up_step", 0)
+                    if "response_status" not in state[email]:
+                        state[email]["response_status"] = lead.get("response_status")
         except Exception:
             pass
+
     return state
 
 
@@ -192,8 +205,11 @@ def main():
         print("No CSV files found. Place lead files in data/raw/ or use --input.")
         sys.exit(1)
 
-    # Load previous send/follow-up state so we don't reset it on re-score
-    prior_state = load_prior_state(scored_dir)
+    logs_dir = base / "logs"
+    logs_dir.mkdir(exist_ok=True)
+
+    # Load send logs + scored JSONs to restore email_sent flags and follow-up state
+    prior_state = load_prior_state(logs_dir, scored_dir)
     print(f"Loaded prior state for {len(prior_state)} emailed leads.")
 
     all_leads = []
