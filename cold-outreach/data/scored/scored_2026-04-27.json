@@ -348,7 +348,7 @@
       "digital": 10
     },
     "email_sent": false,
-    "response_status": "POSITIVE",
+    "response_status": null,
     "follow_up_step": 0
   },
   {
