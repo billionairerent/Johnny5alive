@@ -1,0 +1,50 @@
+[
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Failure)",
+    "classification": "BOUNCE",
+    "date": "2026-05-10"
+  },
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Failure)",
+    "classification": "BOUNCE",
+    "date": "2026-05-10"
+  },
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Failure)",
+    "classification": "BOUNCE",
+    "date": "2026-05-10"
+  },
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Delay)",
+    "classification": "BOUNCE",
+    "date": "2026-05-10"
+  },
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Failure)",
+    "classification": "BOUNCE",
+    "date": "2026-05-11"
+  },
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Failure)",
+    "classification": "BOUNCE",
+    "date": "2026-05-11"
+  },
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Failure)",
+    "classification": "BOUNCE",
+    "date": "2026-05-11"
+  },
+  {
+    "from_email": "kellan@wiseacrebrew.com",
+    "subject": "Re: Wiseacre's events deserve cinematic content",
+    "classification": "NEUTRAL",
+    "date": "2026-05-12"
+  }
+]
