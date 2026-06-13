@@ -17,8 +17,6 @@
     --dim:       #4a0050;
     --text:      #e8c8ff;
     --muted:     #6a4a70;
-    --waveform:  #5500aa;
-    --waveactive:#c800ff;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -35,27 +33,16 @@
     overflow-x: hidden;
   }
 
-  /* Scanline overlay */
   body::before {
     content: '';
     position: fixed;
     inset: 0;
-    background: repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 2px,
-      rgba(0,0,0,0.08) 2px,
-      rgba(0,0,0,0.08) 4px
-    );
+    background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.08) 2px, rgba(0,0,0,0.08) 4px);
     pointer-events: none;
     z-index: 999;
   }
 
-  header {
-    text-align: center;
-    margin-bottom: 28px;
-    width: 100%;
-  }
+  header { text-align: center; margin-bottom: 28px; width: 100%; }
 
   .logo {
     font-family: 'Bebas Neue', sans-serif;
@@ -66,8 +53,7 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     line-height: 1;
-    text-shadow: none;
-    filter: drop-shadow(0 0 24px rgba(200, 0, 255, 0.5));
+    filter: drop-shadow(0 0 24px rgba(200,0,255,0.5));
   }
 
   .tagline {
@@ -78,20 +64,9 @@
     text-transform: uppercase;
   }
 
-  .container {
-    width: 100%;
-    max-width: 860px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
+  .container { width: 100%; max-width: 860px; display: flex; flex-direction: column; gap: 16px; }
 
-  .panel {
-    background: var(--panel);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    padding: 20px;
-  }
+  .panel { background: var(--panel); border: 1px solid var(--border); border-radius: 4px; padding: 20px; }
 
   .panel-label {
     font-size: 9px;
@@ -103,7 +78,6 @@
     border-bottom: 1px solid var(--border);
   }
 
-  /* Upload zone */
   .upload-zone {
     border: 2px dashed var(--dim);
     border-radius: 4px;
@@ -113,46 +87,13 @@
     transition: border-color 0.2s, background 0.2s;
     position: relative;
   }
-  .upload-zone:hover, .upload-zone.drag-over {
-    border-color: var(--lean);
-    background: rgba(123, 0, 255, 0.06);
-  }
-  .upload-zone input {
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
-  }
-  .upload-icon {
-    font-size: 36px;
-    margin-bottom: 10px;
-    filter: drop-shadow(0 0 10px rgba(200,0,255,0.6));
-  }
-  .upload-title {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 20px;
-    letter-spacing: 0.15em;
-    color: var(--lean);
-    margin-bottom: 4px;
-  }
-  .upload-sub {
-    font-size: 10px;
-    color: var(--muted);
-    letter-spacing: 0.2em;
-  }
-  .file-name {
-    margin-top: 12px;
-    font-size: 11px;
-    color: var(--lean);
-    letter-spacing: 0.1em;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+  .upload-zone:hover, .upload-zone.drag-over { border-color: var(--lean); background: rgba(123,0,255,0.06); }
+  .upload-zone input { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%; }
+  .upload-icon { font-size: 36px; margin-bottom: 10px; filter: drop-shadow(0 0 10px rgba(200,0,255,0.6)); }
+  .upload-title { font-family: 'Bebas Neue', sans-serif; font-size: 20px; letter-spacing: 0.15em; color: var(--lean); margin-bottom: 4px; }
+  .upload-sub { font-size: 10px; color: var(--muted); letter-spacing: 0.2em; }
+  .file-name { margin-top: 12px; font-size: 11px; color: var(--lean); letter-spacing: 0.1em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
-  /* Waveform */
   .waveform-wrap {
     position: relative;
     height: 90px;
@@ -163,15 +104,10 @@
     cursor: pointer;
     margin-bottom: 14px;
   }
-  #waveformCanvas {
-    width: 100%;
-    height: 100%;
-    display: block;
-  }
+  #waveformCanvas { width: 100%; height: 100%; display: block; }
   .playhead {
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: 0; bottom: 0;
     width: 2px;
     background: var(--syrup);
     box-shadow: 0 0 8px var(--syrup);
@@ -179,13 +115,7 @@
     transition: left 0.05s linear;
   }
 
-  /* Transport */
-  .transport {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    flex-wrap: wrap;
-  }
+  .transport { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
 
   .btn {
     font-family: 'Bebas Neue', sans-serif;
@@ -200,122 +130,55 @@
     transition: all 0.15s;
   }
   .btn:hover { border-color: var(--lean); color: var(--lean); }
-  .btn.primary {
-    background: var(--purple);
-    border-color: var(--purple);
-    color: #fff;
-    box-shadow: 0 0 18px rgba(123,0,255,0.4);
-  }
-  .btn.primary:hover {
-    background: var(--lean);
-    border-color: var(--lean);
-    box-shadow: 0 0 24px rgba(200,0,255,0.6);
-  }
-  .btn.active {
-    background: var(--lean);
-    border-color: var(--lean);
-    color: #fff;
-    box-shadow: 0 0 18px rgba(200,0,255,0.5);
-  }
-  .btn:disabled {
-    opacity: 0.35;
-    cursor: default;
-  }
+  .btn.primary { background: var(--purple); border-color: var(--purple); color: #fff; box-shadow: 0 0 18px rgba(123,0,255,0.4); }
+  .btn.primary:hover { background: var(--lean); border-color: var(--lean); box-shadow: 0 0 24px rgba(200,0,255,0.6); }
+  .btn.active { background: var(--lean); border-color: var(--lean); color: #fff; box-shadow: 0 0 18px rgba(200,0,255,0.5); }
+  .btn:disabled { opacity: 0.35; cursor: default; }
 
-  .time-display {
-    font-size: 13px;
-    color: var(--lean);
-    letter-spacing: 0.12em;
-    margin-left: auto;
-  }
+  .time-display { font-size: 13px; color: var(--lean); letter-spacing: 0.12em; margin-left: auto; }
 
-  /* Controls grid */
-  .controls-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-  }
-
+  .controls-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
   .knob-section { display: flex; flex-direction: column; gap: 12px; }
 
-  .knob-row {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-  }
+  .knob-label { font-size: 9px; letter-spacing: 0.3em; color: var(--muted); text-transform: uppercase; }
+  .knob-val { font-size: 11px; color: var(--lean); letter-spacing: 0.1em; min-width: 52px; text-align: right; }
 
-  .knob-wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6px;
-    flex: 1;
-  }
+  .slider-row { display: flex; flex-direction: column; gap: 6px; }
+  .slider-header { display: flex; justify-content: space-between; align-items: center; }
 
-  .knob-label {
-    font-size: 9px;
-    letter-spacing: 0.3em;
-    color: var(--muted);
-    text-transform: uppercase;
-    text-align: center;
-  }
+  input[type=range] { -webkit-appearance: none; width: 100%; height: 4px; background: var(--dim); border-radius: 2px; outline: none; }
+  input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 16px; height: 16px; border-radius: 50%; background: var(--lean); cursor: pointer; box-shadow: 0 0 8px rgba(200,0,255,0.7); }
+  input[type=range]::-moz-range-thumb { width: 16px; height: 16px; border-radius: 50%; background: var(--lean); cursor: pointer; border: none; box-shadow: 0 0 8px rgba(200,0,255,0.7); }
 
-  .knob-val {
+  .bpm-pulse {
+    display: inline-block;
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--lean);
+    margin-left: 5px;
+    vertical-align: middle;
+    opacity: 0;
+    transition: opacity 0.04s;
+    box-shadow: 0 0 6px var(--lean);
+  }
+  .bpm-pulse.beat { opacity: 1; }
+
+  .beat-select { display: flex; gap: 6px; margin-top: 6px; }
+  .beat-btn {
     font-size: 11px;
-    color: var(--lean);
-    letter-spacing: 0.1em;
-    text-align: center;
-    min-width: 48px;
-  }
-
-  /* Slider style */
-  .slider-row {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-  }
-
-  .slider-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  input[type=range] {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 4px;
-    background: var(--dim);
+    padding: 5px 12px;
+    border: 1px solid var(--dim);
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
     border-radius: 2px;
-    outline: none;
+    font-family: 'Space Mono', monospace;
+    transition: all 0.12s;
   }
-  input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background: var(--lean);
-    cursor: pointer;
-    box-shadow: 0 0 8px rgba(200,0,255,0.7);
-  }
-  input[type=range]::-moz-range-thumb {
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background: var(--lean);
-    cursor: pointer;
-    border: none;
-    box-shadow: 0 0 8px rgba(200,0,255,0.7);
-  }
+  .beat-btn:hover { border-color: var(--lean); color: var(--lean); }
+  .beat-btn.selected { border-color: var(--lean); color: var(--lean); background: rgba(200,0,255,0.1); }
 
-  /* Chop sequencer */
-  .chop-grid {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    gap: 6px;
-    margin-top: 8px;
-  }
-
+  .chop-grid { display: grid; grid-template-columns: repeat(8, 1fr); gap: 6px; margin-top: 8px; }
   .chop-pad {
     aspect-ratio: 1;
     background: rgba(42,0,40,0.8);
@@ -329,33 +192,12 @@
     font-family: 'Space Mono', monospace;
     color: var(--muted);
     transition: all 0.1s;
-    position: relative;
-    overflow: hidden;
   }
-  .chop-pad:hover {
-    border-color: var(--dim);
-    color: var(--lean);
-  }
-  .chop-pad.marked {
-    background: rgba(123,0,255,0.25);
-    border-color: var(--purple);
-    color: var(--lean);
-    box-shadow: inset 0 0 10px rgba(123,0,255,0.3);
-  }
-  .chop-pad.active-flash {
-    background: var(--lean) !important;
-    border-color: var(--syrup) !important;
-    box-shadow: 0 0 16px rgba(200,0,255,0.8) !important;
-  }
+  .chop-pad:hover { border-color: var(--dim); color: var(--lean); }
+  .chop-pad.marked { background: rgba(123,0,255,0.25); border-color: var(--purple); color: var(--lean); box-shadow: inset 0 0 10px rgba(123,0,255,0.3); }
+  .chop-pad.active-flash { background: var(--lean) !important; border-color: var(--syrup) !important; box-shadow: 0 0 16px rgba(200,0,255,0.8) !important; }
 
-  /* Effect toggles */
-  .fx-row {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 4px;
-  }
-
+  .fx-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 4px; }
   .fx-toggle {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 13px;
@@ -368,98 +210,26 @@
     border-radius: 2px;
     transition: all 0.15s;
   }
-  .fx-toggle.on {
-    border-color: var(--lean);
-    color: var(--lean);
-    background: rgba(200,0,255,0.1);
-    box-shadow: 0 0 12px rgba(200,0,255,0.3);
-  }
+  .fx-toggle.on { border-color: var(--lean); color: var(--lean); background: rgba(200,0,255,0.1); box-shadow: 0 0 12px rgba(200,0,255,0.3); }
 
-  /* Export */
-  .export-row {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    flex-wrap: wrap;
-  }
+  .export-row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .progress-bar-wrap { flex: 1; height: 6px; background: var(--dim); border-radius: 3px; overflow: hidden; min-width: 120px; }
+  .progress-bar-fill { height: 100%; width: 0%; background: linear-gradient(90deg, var(--purple), var(--lean)); transition: width 0.1s; box-shadow: 0 0 8px rgba(200,0,255,0.5); }
 
-  .progress-bar-wrap {
-    flex: 1;
-    height: 6px;
-    background: var(--dim);
-    border-radius: 3px;
-    overflow: hidden;
-    min-width: 120px;
-  }
-  .progress-bar-fill {
-    height: 100%;
-    width: 0%;
-    background: linear-gradient(90deg, var(--purple), var(--lean));
-    transition: width 0.1s;
-    box-shadow: 0 0 8px rgba(200,0,255,0.5);
-  }
+  .status-msg { font-size: 10px; color: var(--muted); letter-spacing: 0.1em; text-align: center; margin-top: 12px; min-height: 16px; }
+  .purple-glow { text-shadow: 0 0 10px rgba(200,0,255,0.8); color: var(--lean); }
 
-  .status-msg {
-    font-size: 10px;
-    color: var(--muted);
-    letter-spacing: 0.1em;
-    text-align: center;
-    margin-top: 12px;
-    min-height: 16px;
-  }
+  .vu-wrap { display: flex; gap: 3px; align-items: flex-end; height: 30px; }
+  .vu-bar { width: 6px; background: var(--dim); border-radius: 1px; transition: height 0.05s; min-height: 3px; }
 
-  .purple-glow {
-    text-shadow: 0 0 10px rgba(200,0,255,0.8);
-    color: var(--lean);
-  }
-
-  /* VU meter */
-  .vu-wrap {
-    display: flex;
-    gap: 3px;
-    align-items: flex-end;
-    height: 30px;
-  }
-  .vu-bar {
-    width: 6px;
-    background: var(--dim);
-    border-radius: 1px;
-    transition: height 0.05s;
-    min-height: 3px;
-  }
-
-  /* Preset row */
-  .preset-row {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-    margin-bottom: 16px;
-  }
-  .preset-btn {
-    font-size: 10px;
-    letter-spacing: 0.15em;
-    padding: 6px 14px;
-    border: 1px solid var(--dim);
-    background: transparent;
-    color: var(--muted);
-    cursor: pointer;
-    border-radius: 2px;
-    transition: all 0.12s;
-    font-family: 'Space Mono', monospace;
-  }
-  .preset-btn:hover {
-    border-color: var(--lean);
-    color: var(--lean);
-  }
-  .preset-btn.selected {
-    border-color: var(--purple);
-    color: var(--lean);
-    background: rgba(123,0,255,0.12);
-  }
+  .preset-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+  .preset-btn { font-size: 10px; letter-spacing: 0.15em; padding: 6px 14px; border: 1px solid var(--dim); background: transparent; color: var(--muted); cursor: pointer; border-radius: 2px; transition: all 0.12s; font-family: 'Space Mono', monospace; }
+  .preset-btn:hover { border-color: var(--lean); color: var(--lean); }
+  .preset-btn.selected { border-color: var(--purple); color: var(--lean); background: rgba(123,0,255,0.12); }
 
   @media (max-width: 600px) {
-    .chop-grid { grid-template-columns: repeat(8, 1fr); gap: 4px; }
     .controls-grid { grid-template-columns: 1fr; }
+    .chop-grid { gap: 4px; }
   }
 </style>
 </head>
@@ -472,7 +242,6 @@
 
 <div class="container">
 
-  <!-- Upload -->
   <div class="panel">
     <div class="panel-label">Load Audio</div>
     <div class="upload-zone" id="uploadZone">
@@ -484,7 +253,6 @@
     </div>
   </div>
 
-  <!-- Waveform + Transport -->
   <div class="panel" id="playerPanel" style="display:none">
     <div class="panel-label">Waveform</div>
     <div class="waveform-wrap" id="waveformWrap">
@@ -492,9 +260,9 @@
       <div class="playhead" id="playhead" style="left:0%"></div>
     </div>
     <div class="transport">
-      <button class="btn primary" id="playBtn" disabled>▶ PLAY</button>
-      <button class="btn" id="stopBtn" disabled>■ STOP</button>
-      <button class="btn" id="loopBtn">⟳ LOOP</button>
+      <button class="btn primary" id="playBtn" disabled>&#9654; PLAY</button>
+      <button class="btn" id="stopBtn" disabled>&#9632; STOP</button>
+      <button class="btn" id="loopBtn">&#10227; LOOP</button>
       <div class="vu-wrap" id="vuMeter">
         <div class="vu-bar" style="height:40%"></div>
         <div class="vu-bar" style="height:55%"></div>
@@ -510,7 +278,6 @@
     <div class="status-msg" id="statusMsg">Load a track to start chopping</div>
   </div>
 
-  <!-- Presets -->
   <div class="panel" id="controlsPanel" style="display:none">
     <div class="panel-label">Presets</div>
     <div class="preset-row">
@@ -522,7 +289,6 @@
       <button class="preset-btn" onclick="applyPreset('custom')">CUSTOM</button>
     </div>
 
-    <!-- Main knobs -->
     <div class="controls-grid">
       <div class="knob-section">
         <div class="panel-label" style="margin-bottom:0">Speed &amp; Pitch</div>
@@ -549,6 +315,24 @@
             <span class="knob-val" id="scrubVal">0%</span>
           </div>
           <input type="range" id="scrubSlider" min="0" max="100" step="1" value="0">
+        </div>
+
+        <div class="slider-row">
+          <div class="slider-header">
+            <span class="knob-label">Chop BPM <span class="bpm-pulse" id="bpmPulse"></span></span>
+            <span class="knob-val" id="bpmVal">75 BPM</span>
+          </div>
+          <input type="range" id="bpmSlider" min="40" max="160" step="1" value="75">
+        </div>
+
+        <div>
+          <div class="knob-label" style="margin-bottom:6px">Beats Per Chop</div>
+          <div class="beat-select">
+            <button class="beat-btn" data-beats="0.5" onclick="setBeatsPerChop(0.5)">1/2</button>
+            <button class="beat-btn selected" data-beats="1" onclick="setBeatsPerChop(1)">1</button>
+            <button class="beat-btn" data-beats="2" onclick="setBeatsPerChop(2)">2</button>
+            <button class="beat-btn" data-beats="4" onclick="setBeatsPerChop(4)">4</button>
+          </div>
         </div>
       </div>
 
@@ -609,7 +393,6 @@
       </div>
     </div>
 
-    <!-- FX toggles -->
     <div style="margin-top:18px">
       <div class="panel-label">FX Switches</div>
       <div class="fx-row">
@@ -623,7 +406,6 @@
     </div>
   </div>
 
-  <!-- Chop Sequencer -->
   <div class="panel" id="chopPanel" style="display:none">
     <div class="panel-label">Chop Markers — Click Pads to Set Chop Points</div>
     <div class="chop-grid" id="chopGrid"></div>
@@ -635,11 +417,10 @@
     </div>
   </div>
 
-  <!-- Export -->
   <div class="panel" id="exportPanel" style="display:none">
     <div class="panel-label">Render &amp; Export</div>
     <div class="export-row">
-      <button class="btn primary" id="renderBtn" onclick="renderAudio()">🎛 RENDER SCREWED</button>
+      <button class="btn primary" id="renderBtn" onclick="renderAudio()">RENDER SCREWED</button>
       <div class="progress-bar-wrap">
         <div class="progress-bar-fill" id="progressFill"></div>
       </div>
@@ -651,97 +432,79 @@
 </div>
 
 <script>
-// ──────────────────────────────────────────────
-// Audio Context & State
-// ──────────────────────────────────────────────
-let audioCtx = null;
+// ─────────────────────────────────────────────
+// State
+// ─────────────────────────────────────────────
+let audioCtx    = null;
 let audioBuffer = null;
-let sourceNode = null;
-let isPlaying = false;
-let isLooping = false;
-let startTime = 0;
+let sourceNode  = null;
+let isPlaying   = false;
+let isLooping   = false;
+let startTime   = 0;
 let pauseOffset = 0;
-let animFrame = null;
-let analyser = null;
-let gainNode = null;
-let bassEQ = null;
-let highCutFilter = null;
-let convolver = null;
-let reverbGain = null;
-let dryGain = null;
-let flangerDelay = null;
-let flangerFeedback = null;
-let flangerOsc = null;
-let flangerGain = null;
+let animFrame   = null;
+let chainReady  = false;
+
+// Audio nodes — built once per file load, reused across all seeks
+let analyser, gainNode, bassEQ, highCutFilter;
+let convolver, reverbGain, dryGain;
+let flangerDelay, flangerFeedback, flangerOsc, flangerGain;
+let doublerDelay, doublerGain;
+
+// Chop engine
 let chopPoints = [];
-let currentPreset = null;
+let chopTimer  = null;
+let chopIdx    = 0;
 
 const state = {
-  speed: 0.70,
-  pitch: -3,
-  scrub: 0,
-  reverb: 25,
-  bass: 4,
-  highcut: 6000,
-  doubler: 0,
-  flanger: 0,
-  volume: 80,
-  loop: false,
-  autoChop: false,
-  scratch: false,
-  glitch: false,
-  stutter: false,
-  purpleLean: false,
+  speed: 0.70, pitch: -3, scrub: 0,
+  reverb: 25, bass: 4, highcut: 6000,
+  doubler: 0, flanger: 0, volume: 80,
+  autoChop: false, glitch: false, stutter: false,
+  bpm: 75, beatsPerChop: 1,
 };
 
-// ──────────────────────────────────────────────
-// Init Audio Context
-// ──────────────────────────────────────────────
+// ─────────────────────────────────────────────
+// Audio context
+// ─────────────────────────────────────────────
 function initAudioContext() {
-  if (!audioCtx) {
-    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-  }
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
   if (audioCtx.state === 'suspended') audioCtx.resume();
 }
 
-// ──────────────────────────────────────────────
-// File Load
-// ──────────────────────────────────────────────
-const fileInput = document.getElementById('fileInput');
-const uploadZone = document.getElementById('uploadZone');
-
-fileInput.addEventListener('change', e => {
-  const file = e.target.files[0];
-  if (file) loadFile(file);
+// ─────────────────────────────────────────────
+// File load
+// ─────────────────────────────────────────────
+document.getElementById('fileInput').addEventListener('change', e => {
+  if (e.target.files[0]) loadFile(e.target.files[0]);
 });
-
+const uploadZone = document.getElementById('uploadZone');
 uploadZone.addEventListener('dragover', e => { e.preventDefault(); uploadZone.classList.add('drag-over'); });
 uploadZone.addEventListener('dragleave', () => uploadZone.classList.remove('drag-over'));
 uploadZone.addEventListener('drop', e => {
   e.preventDefault();
   uploadZone.classList.remove('drag-over');
-  const file = e.dataTransfer.files[0];
-  if (file) loadFile(file);
+  if (e.dataTransfer.files[0]) loadFile(e.dataTransfer.files[0]);
 });
 
 async function loadFile(file) {
   initAudioContext();
   stopAudio();
-  document.getElementById('fileName').textContent = '⟳ Loading: ' + file.name;
-  setStatus('Decoding audio...');
-
+  chainReady = false;
+  document.getElementById('fileName').textContent = 'Loading: ' + file.name;
+  setStatus('Decoding...');
   const reader = new FileReader();
-  reader.onload = async (e) => {
+  reader.onload = async e => {
     try {
       audioBuffer = await audioCtx.decodeAudioData(e.target.result.slice(0));
-      document.getElementById('fileName').textContent = '✓ ' + file.name;
-      drawWaveform();
+      document.getElementById('fileName').textContent = file.name;
       buildAudioChain();
+      drawWaveform();
       showPanels();
       updateTimeDisplay(0);
       setStatus('Track loaded. Adjust your screws below.');
     } catch(err) {
-      setStatus('Error decoding file. Try another format.');
+      setStatus('Error decoding file.');
       console.error(err);
     }
   };
@@ -756,69 +519,9 @@ function showPanels() {
   document.getElementById('stopBtn').disabled = false;
 }
 
-// ──────────────────────────────────────────────
-// Draw Waveform
-// ──────────────────────────────────────────────
-function drawWaveform() {
-  const canvas = document.getElementById('waveformCanvas');
-  const wrap = document.getElementById('waveformWrap');
-  canvas.width = wrap.clientWidth * devicePixelRatio;
-  canvas.height = wrap.clientHeight * devicePixelRatio;
-  const ctx = canvas.getContext('2d');
-  ctx.scale(devicePixelRatio, devicePixelRatio);
-  const W = wrap.clientWidth, H = wrap.clientHeight;
-
-  const data = audioBuffer.getChannelData(0);
-  const step = Math.ceil(data.length / W);
-  const amp = H / 2;
-
-  ctx.fillStyle = 'rgba(10,0,8,0.0)';
-  ctx.fillRect(0,0,W,H);
-
-  // Background gradient
-  const grad = ctx.createLinearGradient(0,0,W,0);
-  grad.addColorStop(0, '#2a0050');
-  grad.addColorStop(0.5, '#5500aa');
-  grad.addColorStop(1, '#2a0050');
-
-  ctx.beginPath();
-  ctx.strokeStyle = grad;
-  ctx.lineWidth = 1.5;
-
-  for (let x = 0; x < W; x++) {
-    let min = 1, max = -1;
-    for (let i = 0; i < step; i++) {
-      const d = data[(x * step) + i] || 0;
-      if (d < min) min = d;
-      if (d > max) max = d;
-    }
-    ctx.moveTo(x, (1 + min) * amp);
-    ctx.lineTo(x, (1 + max) * amp);
-  }
-  ctx.stroke();
-
-  // Chop markers
-  drawChopMarkers(ctx, W, H);
-}
-
-function drawChopMarkers(ctx, W, H) {
-  if (!audioBuffer) return;
-  chopPoints.forEach(t => {
-    const x = (t / audioBuffer.duration) * W;
-    ctx.beginPath();
-    ctx.strokeStyle = '#ff00cc';
-    ctx.lineWidth = 2;
-    ctx.setLineDash([4,4]);
-    ctx.moveTo(x, 0);
-    ctx.lineTo(x, H);
-    ctx.stroke();
-    ctx.setLineDash([]);
-  });
-}
-
-// ──────────────────────────────────────────────
-// Audio Chain
-// ──────────────────────────────────────────────
+// ─────────────────────────────────────────────
+// Audio chain — built once per file, reused on every seek
+// ─────────────────────────────────────────────
 function buildAudioChain() {
   gainNode = audioCtx.createGain();
   gainNode.gain.value = state.volume / 100;
@@ -835,154 +538,272 @@ function buildAudioChain() {
   analyser = audioCtx.createAnalyser();
   analyser.fftSize = 256;
 
-  // Reverb (convolver)
   convolver = audioCtx.createConvolver();
   reverbGain = audioCtx.createGain();
   dryGain = audioCtx.createGain();
   reverbGain.gain.value = state.reverb / 100 * 0.5;
   dryGain.gain.value = 1;
-  createReverbImpulse();
+  makeReverbImpulse();
 
-  // Flanger
   flangerDelay = audioCtx.createDelay(1.0);
   flangerDelay.delayTime.value = 0.005;
   flangerFeedback = audioCtx.createGain();
   flangerFeedback.gain.value = 0.5;
+  flangerGain = audioCtx.createGain();
+  flangerGain.gain.value = 0;
   flangerOsc = audioCtx.createOscillator();
   flangerOsc.type = 'sine';
   flangerOsc.frequency.value = 0.4;
   const flangerDepth = audioCtx.createGain();
   flangerDepth.gain.value = 0.002;
-  flangerGain = audioCtx.createGain();
-  flangerGain.gain.value = 0;
   flangerOsc.connect(flangerDepth);
   flangerDepth.connect(flangerDelay.delayTime);
   flangerOsc.start();
+
+  // Vocal doubler: 25ms delayed copy blended in
+  doublerDelay = audioCtx.createDelay(0.5);
+  doublerDelay.delayTime.value = 0.025;
+  doublerGain = audioCtx.createGain();
+  doublerGain.gain.value = 0;
+
+  // Wire static chain (everything downstream of the source node)
+  bassEQ.connect(highCutFilter);
+  highCutFilter.connect(dryGain);
+  highCutFilter.connect(convolver);
+  convolver.connect(reverbGain);
+  highCutFilter.connect(flangerDelay);
+  flangerDelay.connect(flangerFeedback);
+  flangerFeedback.connect(flangerDelay);
+  flangerDelay.connect(flangerGain);
+  highCutFilter.connect(doublerDelay);
+  doublerDelay.connect(doublerGain);
+  dryGain.connect(gainNode);
+  reverbGain.connect(gainNode);
+  flangerGain.connect(gainNode);
+  doublerGain.connect(gainNode);
+  gainNode.connect(analyser);
+  analyser.connect(audioCtx.destination);
+
+  chainReady = true;
 }
 
-function createReverbImpulse() {
-  if (!convolver) return;
-  const length = audioCtx.sampleRate * 2.5;
-  const impulse = audioCtx.createBuffer(2, length, audioCtx.sampleRate);
+function makeReverbImpulse() {
+  const len = audioCtx.sampleRate * 2.5;
+  const buf = audioCtx.createBuffer(2, len, audioCtx.sampleRate);
   for (let ch = 0; ch < 2; ch++) {
-    const d = impulse.getChannelData(ch);
-    for (let i = 0; i < length; i++) {
-      d[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / length, 2.5);
-    }
+    const d = buf.getChannelData(ch);
+    for (let i = 0; i < len; i++) d[i] = (Math.random()*2-1) * Math.pow(1-i/len, 2.5);
   }
-  convolver.buffer = impulse;
+  convolver.buffer = buf;
 }
 
-// ──────────────────────────────────────────────
-// Playback
-// ──────────────────────────────────────────────
+// ─────────────────────────────────────────────
+// Source — lightweight, reuses the static chain
+// ─────────────────────────────────────────────
+function spawnSource(offset) {
+  if (sourceNode) {
+    sourceNode.onended = null;
+    try { sourceNode.disconnect(); sourceNode.stop(); } catch(e) {}
+  }
+  sourceNode = audioCtx.createBufferSource();
+  sourceNode.buffer = audioBuffer;
+  sourceNode.playbackRate.value = state.speed * Math.pow(2, state.pitch / 12);
+  sourceNode.loop = isLooping && !state.autoChop;
+  sourceNode.connect(bassEQ);
+
+  const safe = Math.max(0, offset || 0) % audioBuffer.duration;
+  sourceNode.start(0, safe);
+  startTime = audioCtx.currentTime - safe;
+
+  sourceNode.onended = () => {
+    if (isPlaying && !isLooping && !state.autoChop) stopAudio(true);
+  };
+}
+
+// ─────────────────────────────────────────────
+// Playback controls
+// ─────────────────────────────────────────────
 document.getElementById('playBtn').addEventListener('click', togglePlay);
-document.getElementById('stopBtn').addEventListener('click', stopAudio);
+document.getElementById('stopBtn').addEventListener('click', () => stopAudio(false));
 document.getElementById('loopBtn').addEventListener('click', function() {
   isLooping = !isLooping;
   this.classList.toggle('active', isLooping);
+  if (sourceNode && isPlaying) sourceNode.loop = isLooping && !state.autoChop;
 });
 
 document.getElementById('waveformWrap').addEventListener('click', function(e) {
   if (!audioBuffer) return;
-  const rect = this.getBoundingClientRect();
-  const ratio = (e.clientX - rect.left) / rect.width;
-  pauseOffset = ratio * audioBuffer.duration;
+  const ratio = (e.clientX - this.getBoundingClientRect().left) / this.clientWidth;
+  const t = ratio * audioBuffer.duration;
+  pauseOffset = t;
   if (isPlaying) {
-    stopAudio(false);
-    playAudio();
+    seekTo(t);
+  } else {
+    updatePlayhead(ratio);
+    updateTimeDisplay(t);
   }
-  updatePlayhead(ratio);
-  updateTimeDisplay(pauseOffset);
 });
 
 function togglePlay() {
   if (!audioBuffer) return;
   initAudioContext();
-  if (isPlaying) pauseAudio();
-  else playAudio();
+  isPlaying ? pauseAudio() : playAudio();
 }
 
 function playAudio() {
   if (!audioBuffer || !audioCtx) return;
-  buildAudioChain();
-
-  sourceNode = audioCtx.createBufferSource();
-  sourceNode.buffer = audioBuffer;
-  sourceNode.playbackRate.value = state.speed;
-  sourceNode.loop = isLooping;
-
-  // Chain: source → bass → highcut → dry/reverb split → flanger → gain → analyser → out
-  sourceNode.connect(bassEQ);
-  bassEQ.connect(highCutFilter);
-  highCutFilter.connect(dryGain);
-  highCutFilter.connect(convolver);
-  convolver.connect(reverbGain);
-
-  highCutFilter.connect(flangerDelay);
-  flangerDelay.connect(flangerFeedback);
-  flangerFeedback.connect(flangerDelay);
-  flangerDelay.connect(flangerGain);
-
-  dryGain.connect(gainNode);
-  reverbGain.connect(gainNode);
-  flangerGain.connect(gainNode);
-  gainNode.connect(analyser);
-  analyser.connect(audioCtx.destination);
-
-  // Pitch shift simulation via playback rate compensation
-  sourceNode.playbackRate.value = state.speed * Math.pow(2, state.pitch / 12);
-
-  sourceNode.start(0, pauseOffset % (audioBuffer ? audioBuffer.duration : 0));
-  startTime = audioCtx.currentTime - pauseOffset;
+  spawnSource(pauseOffset);
   isPlaying = true;
-
-  document.getElementById('playBtn').textContent = '⏸ PAUSE';
+  document.getElementById('playBtn').textContent = 'PAUSE';
   startAnimLoop();
-
   if (state.glitch) startGlitch();
   if (state.stutter) startStutter();
+  if (state.autoChop && chopPoints.length >= 2) startChopEngine();
+}
 
-  sourceNode.onended = () => {
-    if (isPlaying && !isLooping) {
-      stopAudio(true);
-    }
-  };
+function seekTo(offset) {
+  if (!isPlaying) { pauseOffset = offset; return; }
+  stopChopEngine(); clearGlitch(); clearStutter();
+  spawnSource(offset);
+  if (state.glitch) startGlitch();
+  if (state.stutter) startStutter();
+  if (state.autoChop && chopPoints.length >= 2) startChopEngine();
 }
 
 function pauseAudio() {
   if (!isPlaying) return;
   pauseOffset = audioCtx.currentTime - startTime;
-  sourceNode && sourceNode.stop();
+  if (sourceNode) { sourceNode.onended = null; try { sourceNode.stop(); } catch(e) {} }
   isPlaying = false;
-  document.getElementById('playBtn').textContent = '▶ PLAY';
+  document.getElementById('playBtn').textContent = 'PLAY';
   cancelAnimationFrame(animFrame);
-  clearGlitch();
-  clearStutter();
+  stopChopEngine(); clearGlitch(); clearStutter();
 }
 
-function stopAudio(ended = false) {
-  try { sourceNode && sourceNode.stop(); } catch(e){}
+function stopAudio(ended) {
+  if (sourceNode) { sourceNode.onended = null; try { sourceNode.stop(); } catch(e) {} }
   isPlaying = false;
   if (!ended) pauseOffset = 0;
-  document.getElementById('playBtn').textContent = '▶ PLAY';
+  document.getElementById('playBtn').textContent = 'PLAY';
   cancelAnimationFrame(animFrame);
-  updatePlayhead(0);
-  updateTimeDisplay(0);
-  clearGlitch();
-  clearStutter();
+  if (!ended) { updatePlayhead(0); updateTimeDisplay(0); }
+  stopChopEngine(); clearGlitch(); clearStutter();
 }
 
-// ──────────────────────────────────────────────
-// Animation Loop — Playhead + VU
-// ──────────────────────────────────────────────
+// ─────────────────────────────────────────────
+// Chop engine — BPM-synced, steps through chop points rhythmically
+// ─────────────────────────────────────────────
+function startChopEngine() {
+  stopChopEngine();
+  if (!state.autoChop || chopPoints.length < 2 || !isPlaying) return;
+  chopIdx = 0;
+  scheduleChop();
+}
+
+function scheduleChop() {
+  const ms = (60 / state.bpm) * state.beatsPerChop * 1000;
+  chopTimer = setTimeout(() => {
+    if (!isPlaying || !state.autoChop || chopPoints.length < 2) return;
+
+    chopIdx = (chopIdx + 1) % chopPoints.length;
+    const t = chopPoints[chopIdx];
+
+    // Flash BPM pulse indicator
+    const pulse = document.getElementById('bpmPulse');
+    pulse.classList.add('beat');
+    setTimeout(() => pulse.classList.remove('beat'), 80);
+
+    // Flash corresponding pad
+    const padIdx = Math.round((t / audioBuffer.duration) * 16);
+    const pads = document.querySelectorAll('.chop-pad');
+    if (pads[padIdx]) flashPad(pads[padIdx]);
+
+    // Lightweight seek — swap source without touching the rest of the chain
+    if (sourceNode) { sourceNode.onended = null; try { sourceNode.disconnect(); sourceNode.stop(); } catch(e) {} }
+    sourceNode = audioCtx.createBufferSource();
+    sourceNode.buffer = audioBuffer;
+    sourceNode.playbackRate.value = state.speed * Math.pow(2, state.pitch / 12);
+    sourceNode.loop = false;
+    sourceNode.connect(bassEQ);
+    const safe = Math.max(0, t) % audioBuffer.duration;
+    sourceNode.start(0, safe);
+    startTime = audioCtx.currentTime - safe;
+    sourceNode.onended = () => { if (isPlaying && !isLooping && !state.autoChop) stopAudio(true); };
+
+    scheduleChop();
+  }, ms);
+}
+
+function stopChopEngine() {
+  clearTimeout(chopTimer);
+  chopTimer = null;
+}
+
+function setBeatsPerChop(beats) {
+  state.beatsPerChop = beats;
+  document.querySelectorAll('.beat-btn').forEach(b => {
+    b.classList.toggle('selected', parseFloat(b.dataset.beats) === beats);
+  });
+  if (isPlaying && state.autoChop) startChopEngine();
+}
+
+// ─────────────────────────────────────────────
+// Waveform
+// ─────────────────────────────────────────────
+function drawWaveform() {
+  const canvas = document.getElementById('waveformCanvas');
+  const wrap   = document.getElementById('waveformWrap');
+  canvas.width  = wrap.clientWidth * devicePixelRatio;
+  canvas.height = wrap.clientHeight * devicePixelRatio;
+  const ctx = canvas.getContext('2d');
+  ctx.scale(devicePixelRatio, devicePixelRatio);
+  const W = wrap.clientWidth, H = wrap.clientHeight;
+
+  const data = audioBuffer.getChannelData(0);
+  const step = Math.ceil(data.length / W);
+  const amp  = H / 2;
+
+  const grad = ctx.createLinearGradient(0,0,W,0);
+  grad.addColorStop(0, '#2a0050');
+  grad.addColorStop(0.5, '#5500aa');
+  grad.addColorStop(1, '#2a0050');
+
+  ctx.beginPath();
+  ctx.strokeStyle = grad;
+  ctx.lineWidth = 1.5;
+  for (let x = 0; x < W; x++) {
+    let min = 1, max = -1;
+    for (let i = 0; i < step; i++) {
+      const d = data[x*step+i] || 0;
+      if (d < min) min = d;
+      if (d > max) max = d;
+    }
+    ctx.moveTo(x, (1+min)*amp);
+    ctx.lineTo(x, (1+max)*amp);
+  }
+  ctx.stroke();
+
+  chopPoints.forEach(t => {
+    const x = (t / audioBuffer.duration) * W;
+    ctx.beginPath();
+    ctx.strokeStyle = '#ff00cc';
+    ctx.lineWidth = 2;
+    ctx.setLineDash([4,4]);
+    ctx.moveTo(x,0); ctx.lineTo(x,H);
+    ctx.stroke();
+    ctx.setLineDash([]);
+  });
+}
+
+// ─────────────────────────────────────────────
+// Animation loop
+// ─────────────────────────────────────────────
 function startAnimLoop() {
   const loop = () => {
     if (!isPlaying) return;
     const elapsed = audioCtx.currentTime - startTime;
     const dur = audioBuffer ? audioBuffer.duration : 1;
-    const ratio = elapsed / dur;
-    updatePlayhead(Math.min(ratio, 1));
+    updatePlayhead(Math.min(elapsed/dur, 1));
     updateTimeDisplay(elapsed);
     updateVU();
     animFrame = requestAnimationFrame(loop);
@@ -991,22 +812,16 @@ function startAnimLoop() {
 }
 
 function updatePlayhead(ratio) {
-  document.getElementById('playhead').style.left = (ratio * 100) + '%';
+  document.getElementById('playhead').style.left = (ratio*100)+'%';
 }
-
 function updateTimeDisplay(t) {
   const dur = audioBuffer ? audioBuffer.duration : 0;
-  document.getElementById('timeDisplay').textContent =
-    fmtTime(t) + ' / ' + fmtTime(dur);
+  document.getElementById('timeDisplay').textContent = fmtTime(t) + ' / ' + fmtTime(dur);
 }
-
 function fmtTime(s) {
-  s = Math.max(0, s || 0);
-  const m = Math.floor(s / 60);
-  const sec = Math.floor(s % 60);
-  return m + ':' + String(sec).padStart(2,'0');
+  s = Math.max(0, s||0);
+  return Math.floor(s/60) + ':' + String(Math.floor(s%60)).padStart(2,'0');
 }
-
 function updateVU() {
   if (!analyser) return;
   const data = new Uint8Array(analyser.frequencyBinCount);
@@ -1014,141 +829,142 @@ function updateVU() {
   const bars = document.querySelectorAll('.vu-bar');
   const step = Math.floor(data.length / bars.length);
   bars.forEach((bar, i) => {
-    const val = data[i * step] / 255;
-    const h = Math.max(8, val * 100);
-    bar.style.height = h + '%';
-    bar.style.background = val > 0.7 ? 'var(--syrup)' : val > 0.4 ? 'var(--lean)' : 'var(--purple)';
+    const val = data[i*step] / 255;
+    bar.style.height = Math.max(8, val*100) + '%';
+    bar.style.background = val>0.7 ? 'var(--syrup)' : val>0.4 ? 'var(--lean)' : 'var(--purple)';
   });
 }
 
-// ──────────────────────────────────────────────
+// ─────────────────────────────────────────────
 // Sliders
-// ──────────────────────────────────────────────
-function bindSlider(id, stateKey, labelId, format, onChange) {
-  const el = document.getElementById(id);
-  el.addEventListener('input', function() {
-    state[stateKey] = parseFloat(this.value);
-    document.getElementById(labelId).textContent = format(state[stateKey]);
-    if (onChange) onChange(state[stateKey]);
+// ─────────────────────────────────────────────
+function bindSlider(id, key, labelId, fmt, cb) {
+  document.getElementById(id).addEventListener('input', function() {
+    state[key] = parseFloat(this.value);
+    document.getElementById(labelId).textContent = fmt(state[key]);
+    if (cb) cb(state[key]);
   });
 }
 
 bindSlider('speedSlider', 'speed', 'speedVal', v => v.toFixed(2)+'x', v => {
-  if (sourceNode) sourceNode.playbackRate.value = v * Math.pow(2, state.pitch / 12);
+  if (sourceNode) sourceNode.playbackRate.value = v * Math.pow(2, state.pitch/12);
 });
-bindSlider('pitchSlider', 'pitch', 'pitchVal', v => (v >= 0 ? '+' : '') + v, v => {
-  if (sourceNode) sourceNode.playbackRate.value = state.speed * Math.pow(2, v / 12);
+bindSlider('pitchSlider', 'pitch', 'pitchVal', v => (v>=0?'+':'')+v, v => {
+  if (sourceNode) sourceNode.playbackRate.value = state.speed * Math.pow(2, v/12);
 });
 bindSlider('scrubSlider', 'scrub', 'scrubVal', v => Math.round(v)+'%', v => {
-  if (sourceNode && audioBuffer) {
-    const wobble = (v / 100) * 0.04;
-    const baseRate = state.speed * Math.pow(2, state.pitch / 12);
-    sourceNode.playbackRate.value = baseRate - wobble * Math.sin(Date.now() * 0.002);
+  if (sourceNode) {
+    const base = state.speed * Math.pow(2, state.pitch/12);
+    sourceNode.playbackRate.value = base - (v/100)*0.04*Math.sin(Date.now()*0.002);
   }
+});
+bindSlider('bpmSlider', 'bpm', 'bpmVal', v => Math.round(v)+' BPM', () => {
+  if (isPlaying && state.autoChop) startChopEngine();
 });
 bindSlider('reverbSlider', 'reverb', 'reverbVal', v => Math.round(v)+'%', v => {
-  if (reverbGain) reverbGain.gain.value = v / 100 * 0.5;
-  if (dryGain) dryGain.gain.value = 1 - (v / 100 * 0.3);
+  if (reverbGain) reverbGain.gain.value = v/100*0.5;
+  if (dryGain) dryGain.gain.value = 1 - v/100*0.3;
 });
-bindSlider('bassSlider', 'bass', 'bassVal', v => (v >= 0 ? '+' : '') + v + ' dB', v => {
+bindSlider('bassSlider', 'bass', 'bassVal', v => (v>=0?'+':'')+v+' dB', v => {
   if (bassEQ) bassEQ.gain.value = v;
 });
-bindSlider('highcutSlider', 'highcut', 'highcutVal', v => {
-  return v >= 1000 ? (v/1000).toFixed(1)+'kHz' : Math.round(v)+'Hz';
-}, v => {
+bindSlider('highcutSlider', 'highcut', 'highcutVal', v => v>=1000?(v/1000).toFixed(1)+'kHz':Math.round(v)+'Hz', v => {
   if (highCutFilter) highCutFilter.frequency.value = v;
 });
-bindSlider('doublerSlider', 'doubler', 'doublerVal', v => Math.round(v)+'%');
+bindSlider('doublerSlider', 'doubler', 'doublerVal', v => Math.round(v)+'%', v => {
+  if (doublerGain) doublerGain.gain.value = v/100*0.7;
+});
 bindSlider('flangerSlider', 'flanger', 'flangerVal', v => Math.round(v)+'%', v => {
-  if (flangerGain) flangerGain.gain.value = v / 100 * 0.6;
+  if (flangerGain) flangerGain.gain.value = v/100*0.6;
 });
 bindSlider('volSlider', 'volume', 'volVal', v => Math.round(v)+'%', v => {
-  if (gainNode) gainNode.gain.value = v / 100;
+  if (gainNode) gainNode.gain.value = v/100;
 });
 
-// ──────────────────────────────────────────────
-// FX Toggles
-// ──────────────────────────────────────────────
+// ─────────────────────────────────────────────
+// FX toggles
+// ─────────────────────────────────────────────
 function toggleFX(btn) {
   btn.classList.toggle('on');
-  const id = btn.id;
-  if (id === 'fxScrewOn') {
-    const on = btn.classList.contains('on');
-    if (!on) { state.speed = 1.0; document.getElementById('speedSlider').value = 1.0; document.getElementById('speedVal').textContent = '1.00x'; if (sourceNode) sourceNode.playbackRate.value = 1.0; }
-    else { state.speed = 0.70; document.getElementById('speedSlider').value = 0.70; document.getElementById('speedVal').textContent = '0.70x'; if (sourceNode) sourceNode.playbackRate.value = 0.70 * Math.pow(2, state.pitch/12); }
-  }
-  if (id === 'fxChop') { state.autoChop = btn.classList.contains('on'); if (state.autoChop) autoChop(); }
-  if (id === 'fxScratch') { state.scratch = btn.classList.contains('on'); }
-  if (id === 'fxGlitch') { state.glitch = btn.classList.contains('on'); if (state.glitch && isPlaying) startGlitch(); else clearGlitch(); }
-  if (id === 'fxStutter') { state.stutter = btn.classList.contains('on'); if (state.stutter && isPlaying) startStutter(); else clearStutter(); }
-  if (id === 'fxPurple') {
-    const on = btn.classList.contains('on');
-    if (on) { applyPreset('deep'); }
+  const on = btn.classList.contains('on');
+  switch (btn.id) {
+    case 'fxScrewOn':
+      state.speed = on ? 0.70 : 1.0;
+      document.getElementById('speedSlider').value = state.speed;
+      document.getElementById('speedVal').textContent = state.speed.toFixed(2)+'x';
+      if (sourceNode) sourceNode.playbackRate.value = state.speed * Math.pow(2, state.pitch/12);
+      break;
+    case 'fxChop':
+      state.autoChop = on;
+      if (on && isPlaying && chopPoints.length >= 2) startChopEngine();
+      else if (!on) stopChopEngine();
+      break;
+    case 'fxGlitch':
+      state.glitch = on;
+      on && isPlaying ? startGlitch() : clearGlitch();
+      break;
+    case 'fxStutter':
+      state.stutter = on;
+      on && isPlaying ? startStutter() : clearStutter();
+      break;
+    case 'fxPurple':
+      if (on) applyPreset('deep');
+      break;
   }
 }
 
-// ──────────────────────────────────────────────
+// ─────────────────────────────────────────────
 // Glitch & Stutter
-// ──────────────────────────────────────────────
-let glitchInterval = null;
+// ─────────────────────────────────────────────
+let glitchInterval  = null;
 let stutterInterval = null;
 
 function startGlitch() {
   clearGlitch();
   glitchInterval = setInterval(() => {
     if (!sourceNode || !isPlaying) return;
-    const baseRate = state.speed * Math.pow(2, state.pitch / 12);
-    sourceNode.playbackRate.value = baseRate * (0.5 + Math.random() * 1.5);
-    setTimeout(() => { if (sourceNode) sourceNode.playbackRate.value = baseRate; }, 80);
-  }, 600 + Math.random() * 800);
+    const base = state.speed * Math.pow(2, state.pitch/12);
+    sourceNode.playbackRate.value = base * (0.5 + Math.random()*1.5);
+    setTimeout(() => { if (sourceNode) sourceNode.playbackRate.value = base; }, 80);
+  }, 600 + Math.random()*800);
 }
-
 function clearGlitch() { clearInterval(glitchInterval); }
 
 function startStutter() {
   clearStutter();
-  let stutterPhase = false;
+  let phase = false;
   stutterInterval = setInterval(() => {
     if (!gainNode || !isPlaying) return;
-    stutterPhase = !stutterPhase;
-    gainNode.gain.value = stutterPhase ? 0 : state.volume / 100;
+    phase = !phase;
+    gainNode.gain.value = phase ? 0 : state.volume/100;
   }, 120);
 }
 function clearStutter() {
   clearInterval(stutterInterval);
-  if (gainNode) gainNode.gain.value = state.volume / 100;
+  if (gainNode) gainNode.gain.value = state.volume/100;
 }
 
-// ──────────────────────────────────────────────
-// Chop Sequencer
-// ──────────────────────────────────────────────
+// ─────────────────────────────────────────────
+// Chop sequencer pads
+// ─────────────────────────────────────────────
 const chopGrid = document.getElementById('chopGrid');
 for (let i = 0; i < 16; i++) {
   const pad = document.createElement('div');
   pad.className = 'chop-pad';
-  pad.textContent = i + 1;
+  pad.textContent = i+1;
   pad.dataset.idx = i;
   pad.addEventListener('click', function() {
     if (!audioBuffer) return;
     const idx = parseInt(this.dataset.idx);
-    const segDur = audioBuffer.duration / 16;
-    const t = idx * segDur;
-
+    const t = idx * (audioBuffer.duration / 16);
     if (this.classList.contains('marked')) {
-      // Remove
       this.classList.remove('marked');
-      chopPoints = chopPoints.filter(p => Math.abs(p - t) > 0.01);
+      chopPoints = chopPoints.filter(p => Math.abs(p-t) > 0.01);
     } else {
-      // Add
       this.classList.add('marked');
       chopPoints.push(t);
       chopPoints.sort((a,b) => a-b);
-      // Jump to chop point
-      if (isPlaying) {
-        pauseOffset = t;
-        stopAudio(false);
-        playAudio();
-      }
+      if (isPlaying) seekTo(t);
       flashPad(this);
     }
     updateChopCount();
@@ -1172,147 +988,144 @@ function clearChops() {
 function autoChop() {
   if (!audioBuffer) return;
   clearChops();
-  const beats = 8;
-  const segDur = audioBuffer.duration / 16;
   const pads = document.querySelectorAll('.chop-pad');
-  for (let i = 0; i < beats; i++) {
-    const idx = Math.floor(Math.random() * 16);
+  const used = new Set();
+  while (used.size < 8) used.add(Math.floor(Math.random()*16));
+  used.forEach(idx => {
     pads[idx].classList.add('marked');
-    chopPoints.push(idx * segDur);
-  }
+    chopPoints.push(idx * (audioBuffer.duration/16));
+  });
   chopPoints.sort((a,b) => a-b);
   updateChopCount();
   drawWaveform();
 }
 
 function shuffleChops() {
-  if (!audioBuffer || chopPoints.length < 2) return;
-  for (let i = chopPoints.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
+  if (chopPoints.length < 2) return;
+  for (let i = chopPoints.length-1; i > 0; i--) {
+    const j = Math.floor(Math.random()*(i+1));
     [chopPoints[i], chopPoints[j]] = [chopPoints[j], chopPoints[i]];
   }
   setStatus('Chop order shuffled.');
 }
 
 function updateChopCount() {
-  document.getElementById('chopCount').textContent = chopPoints.length + ' chop point' + (chopPoints.length !== 1 ? 's' : '') + ' set';
+  const n = chopPoints.length;
+  document.getElementById('chopCount').textContent = n + ' chop point' + (n!==1?'s':'') + ' set';
 }
 
-// ──────────────────────────────────────────────
+// ─────────────────────────────────────────────
 // Presets
-// ──────────────────────────────────────────────
+// ─────────────────────────────────────────────
 const PRESETS = {
-  classic: { speed: 0.70, pitch: -3, reverb: 25, bass: 4, highcut: 6000, scrub: 10, flanger: 0, doubler: 0, volume: 80 },
-  deep:    { speed: 0.60, pitch: -5, reverb: 45, bass: 8, highcut: 4000, scrub: 20, flanger: 15, doubler: 20, volume: 85 },
-  heavy:   { speed: 0.65, pitch: -4, reverb: 30, bass: 10, highcut: 5000, scrub: 30, flanger: 10, doubler: 0, volume: 90 },
-  vocal:   { speed: 0.72, pitch: -2, reverb: 35, bass: 2, highcut: 8000, scrub: 5, flanger: 25, doubler: 40, volume: 80 },
-  crunk:   { speed: 0.68, pitch: -4, reverb: 20, bass: 12, highcut: 7000, scrub: 15, flanger: 0, doubler: 10, volume: 85 },
-  custom:  null,
+  classic: { speed:0.70, pitch:-3, reverb:25, bass:4,  highcut:6000, scrub:10, flanger:0,  doubler:0,  volume:80, bpm:75 },
+  deep:    { speed:0.60, pitch:-5, reverb:45, bass:8,  highcut:4000, scrub:20, flanger:15, doubler:20, volume:85, bpm:65 },
+  heavy:   { speed:0.65, pitch:-4, reverb:30, bass:10, highcut:5000, scrub:30, flanger:10, doubler:0,  volume:90, bpm:70 },
+  vocal:   { speed:0.72, pitch:-2, reverb:35, bass:2,  highcut:8000, scrub:5,  flanger:25, doubler:40, volume:80, bpm:78 },
+  crunk:   { speed:0.68, pitch:-4, reverb:20, bass:12, highcut:7000, scrub:15, flanger:0,  doubler:10, volume:85, bpm:72 },
 };
 
 function applyPreset(name) {
   const p = PRESETS[name];
   if (!p) return;
-
   document.querySelectorAll('.preset-btn').forEach(b => b.classList.remove('selected'));
-  const clicked = [...document.querySelectorAll('.preset-btn')].find(b => b.getAttribute('onclick') === `applyPreset('${name}')`);
-  if (clicked) clicked.classList.add('selected');
+  const btn = [...document.querySelectorAll('.preset-btn')].find(b => b.getAttribute('onclick') === `applyPreset('${name}')`);
+  if (btn) btn.classList.add('selected');
 
-  const apply = (key, sliderId, labelId, fmt, callback) => {
+  const set = (key, sliderId, labelId, fmt, cb) => {
     state[key] = p[key];
     document.getElementById(sliderId).value = p[key];
     document.getElementById(labelId).textContent = fmt(p[key]);
-    if (callback) callback(p[key]);
+    if (cb) cb(p[key]);
   };
 
-  apply('speed', 'speedSlider', 'speedVal', v => v.toFixed(2)+'x', v => { if (sourceNode) sourceNode.playbackRate.value = v * Math.pow(2, state.pitch/12); });
-  apply('pitch', 'pitchSlider', 'pitchVal', v => (v>=0?'+':'')+v, v => { if (sourceNode) sourceNode.playbackRate.value = state.speed * Math.pow(2, v/12); });
-  apply('reverb', 'reverbSlider', 'reverbVal', v => Math.round(v)+'%', v => { if (reverbGain) reverbGain.gain.value = v/100*0.5; });
-  apply('bass', 'bassSlider', 'bassVal', v => (v>=0?'+':'')+v+' dB', v => { if (bassEQ) bassEQ.gain.value = v; });
-  apply('highcut', 'highcutSlider', 'highcutVal', v => v>=1000?(v/1000).toFixed(1)+'kHz':Math.round(v)+'Hz', v => { if (highCutFilter) highCutFilter.frequency.value = v; });
-  apply('scrub', 'scrubSlider', 'scrubVal', v => Math.round(v)+'%');
-  apply('flanger', 'flangerSlider', 'flangerVal', v => Math.round(v)+'%', v => { if (flangerGain) flangerGain.gain.value = v/100*0.6; });
-  apply('doubler', 'doublerSlider', 'doublerVal', v => Math.round(v)+'%');
-  apply('volume', 'volSlider', 'volVal', v => Math.round(v)+'%', v => { if (gainNode) gainNode.gain.value = v/100; });
+  set('speed',   'speedSlider',   'speedVal',   v => v.toFixed(2)+'x',   v => { if (sourceNode) sourceNode.playbackRate.value = v*Math.pow(2,state.pitch/12); });
+  set('pitch',   'pitchSlider',   'pitchVal',   v => (v>=0?'+':'')+v,    v => { if (sourceNode) sourceNode.playbackRate.value = state.speed*Math.pow(2,v/12); });
+  set('reverb',  'reverbSlider',  'reverbVal',  v => Math.round(v)+'%',  v => { if (reverbGain) reverbGain.gain.value=v/100*0.5; if(dryGain) dryGain.gain.value=1-v/100*0.3; });
+  set('bass',    'bassSlider',    'bassVal',    v => (v>=0?'+':'')+v+' dB', v => { if (bassEQ) bassEQ.gain.value=v; });
+  set('highcut', 'highcutSlider', 'highcutVal', v => v>=1000?(v/1000).toFixed(1)+'kHz':Math.round(v)+'Hz', v => { if (highCutFilter) highCutFilter.frequency.value=v; });
+  set('scrub',   'scrubSlider',   'scrubVal',   v => Math.round(v)+'%');
+  set('flanger', 'flangerSlider', 'flangerVal', v => Math.round(v)+'%',  v => { if (flangerGain) flangerGain.gain.value=v/100*0.6; });
+  set('doubler', 'doublerSlider', 'doublerVal', v => Math.round(v)+'%',  v => { if (doublerGain) doublerGain.gain.value=v/100*0.7; });
+  set('volume',  'volSlider',     'volVal',     v => Math.round(v)+'%',  v => { if (gainNode) gainNode.gain.value=v/100; });
+  set('bpm',     'bpmSlider',     'bpmVal',     v => Math.round(v)+' BPM');
 
+  if (isPlaying && state.autoChop) startChopEngine();
   setStatus('Preset: ' + name.toUpperCase() + ' applied.');
 }
 
-// ──────────────────────────────────────────────
-// Render / Export
-// ──────────────────────────────────────────────
+// ─────────────────────────────────────────────
+// Export — bakes speed, pitch, reverb, bass, highcut, flanger, doubler
+// ─────────────────────────────────────────────
 async function renderAudio() {
   if (!audioBuffer) { setStatus('Load a track first.'); return; }
   const btn = document.getElementById('renderBtn');
   btn.disabled = true;
   document.getElementById('renderStatus').textContent = 'RENDERING...';
   document.getElementById('exportMsg').textContent = 'Processing your screwed track...';
-
   const fill = document.getElementById('progressFill');
   fill.style.width = '0%';
-
   await new Promise(r => setTimeout(r, 50));
 
   try {
-    const rateMultiplier = state.speed * Math.pow(2, state.pitch / 12);
-    const outDuration = audioBuffer.duration / rateMultiplier;
-    const sampleRate = audioCtx.sampleRate;
-    const offlineCtx = new OfflineAudioContext(2, Math.ceil(outDuration * sampleRate), sampleRate);
+    const rate = state.speed * Math.pow(2, state.pitch/12);
+    const sr   = audioCtx.sampleRate;
+    const offCtx = new OfflineAudioContext(2, Math.ceil(audioBuffer.duration/rate*sr), sr);
 
-    const src = offlineCtx.createBufferSource();
+    const src = offCtx.createBufferSource();
     src.buffer = audioBuffer;
-    src.playbackRate.value = rateMultiplier;
+    src.playbackRate.value = rate;
 
-    const bass = offlineCtx.createBiquadFilter();
-    bass.type = 'lowshelf';
-    bass.frequency.value = 200;
-    bass.gain.value = state.bass;
+    const bass = offCtx.createBiquadFilter();
+    bass.type = 'lowshelf'; bass.frequency.value = 200; bass.gain.value = state.bass;
 
-    const hpf = offlineCtx.createBiquadFilter();
-    hpf.type = 'lowpass';
-    hpf.frequency.value = state.highcut;
+    const hpf = offCtx.createBiquadFilter();
+    hpf.type = 'lowpass'; hpf.frequency.value = state.highcut;
 
-    const gain = offlineCtx.createGain();
-    gain.gain.value = state.volume / 100;
+    const gain = offCtx.createGain();
+    gain.gain.value = state.volume/100;
 
-    const conv = offlineCtx.createConvolver();
-    const impLen = sampleRate * 2.5;
-    const imp = offlineCtx.createBuffer(2, impLen, sampleRate);
-    for (let ch = 0; ch < 2; ch++) {
+    const conv = offCtx.createConvolver();
+    const impLen = sr*2.5;
+    const imp = offCtx.createBuffer(2, impLen, sr);
+    for (let ch=0;ch<2;ch++) {
       const d = imp.getChannelData(ch);
-      for (let i = 0; i < impLen; i++) d[i] = (Math.random()*2-1)*Math.pow(1-i/impLen,2.5);
+      for (let i=0;i<impLen;i++) d[i]=(Math.random()*2-1)*Math.pow(1-i/impLen,2.5);
     }
     conv.buffer = imp;
+    const rvbG = offCtx.createGain(); rvbG.gain.value = state.reverb/100*0.5;
+    const dryG = offCtx.createGain(); dryG.gain.value = 1-state.reverb/100*0.3;
 
-    const reverbG = offlineCtx.createGain();
-    reverbG.gain.value = state.reverb / 100 * 0.5;
-    const dryG = offlineCtx.createGain();
-    dryG.gain.value = 1 - state.reverb/100*0.3;
+    const flDel = offCtx.createDelay(1.0); flDel.delayTime.value = 0.005;
+    const flFb  = offCtx.createGain(); flFb.gain.value = 0.5;
+    const flG   = offCtx.createGain(); flG.gain.value = state.flanger/100*0.6;
+    const flOsc = offCtx.createOscillator();
+    flOsc.type = 'sine'; flOsc.frequency.value = 0.4;
+    const flDp  = offCtx.createGain(); flDp.gain.value = 0.002;
+    flOsc.connect(flDp); flDp.connect(flDel.delayTime); flOsc.start();
 
-    src.connect(bass);
-    bass.connect(hpf);
-    hpf.connect(dryG);
-    hpf.connect(conv);
-    conv.connect(reverbG);
-    dryG.connect(gain);
-    reverbG.connect(gain);
-    gain.connect(offlineCtx.destination);
+    const dblDel = offCtx.createDelay(0.5); dblDel.delayTime.value = 0.025;
+    const dblG   = offCtx.createGain(); dblG.gain.value = state.doubler/100*0.7;
+
+    src.connect(bass); bass.connect(hpf);
+    hpf.connect(dryG); hpf.connect(conv); conv.connect(rvbG);
+    hpf.connect(flDel); flDel.connect(flFb); flFb.connect(flDel); flDel.connect(flG);
+    hpf.connect(dblDel); dblDel.connect(dblG);
+    dryG.connect(gain); rvbG.connect(gain); flG.connect(gain); dblG.connect(gain);
+    gain.connect(offCtx.destination);
     src.start();
 
     fill.style.width = '40%';
-    await new Promise(r => setTimeout(r, 80));
+    await new Promise(r => setTimeout(r,80));
     fill.style.width = '65%';
 
-    const rendered = await offlineCtx.startRendering();
-
+    const rendered = await offCtx.startRendering();
     fill.style.width = '85%';
-    await new Promise(r => setTimeout(r, 50));
+    await new Promise(r => setTimeout(r,50));
 
-    // Encode to WAV
-    const wav = audioBufferToWav(rendered);
-    const blob = new Blob([wav], { type: 'audio/wav' });
-    const url = URL.createObjectURL(blob);
-
+    const wav  = encodeWav(rendered);
+    const blob = new Blob([wav], {type:'audio/wav'});
+    const url  = URL.createObjectURL(blob);
     fill.style.width = '100%';
 
     const a = document.createElement('a');
@@ -1321,56 +1134,38 @@ async function renderAudio() {
     a.click();
     URL.revokeObjectURL(url);
 
-    document.getElementById('renderStatus').textContent = 'DONE ✓';
-    document.getElementById('exportMsg').innerHTML = '<span class="purple-glow">✓ Screwed WAV downloaded. Slow it down, pour up, and enjoy.</span>';
-    setStatus('Export complete. Sip slow. 💜');
-
-  } catch (err) {
+    document.getElementById('renderStatus').textContent = 'DONE';
+    document.getElementById('exportMsg').innerHTML = '<span class="purple-glow">WAV downloaded. Sip slow.</span>';
+    setStatus('Export complete.');
+  } catch(err) {
     console.error(err);
     document.getElementById('renderStatus').textContent = 'ERROR';
     document.getElementById('exportMsg').textContent = 'Render failed: ' + err.message;
   }
-
   btn.disabled = false;
 }
 
-// WAV encoder
-function audioBufferToWav(buffer) {
-  const numCh = buffer.numberOfChannels;
-  const sr = buffer.sampleRate;
-  const fmt = 3; // float
-  const bps = 32;
-  const dataLen = buffer.length * numCh * (bps/8);
-  const wavBuf = new ArrayBuffer(44 + dataLen);
-  const view = new DataView(wavBuf);
-  function writeStr(off, str) { for (let i=0;i<str.length;i++) view.setUint8(off+i, str.charCodeAt(i)); }
-  writeStr(0,'RIFF');
-  view.setUint32(4, 36+dataLen, true);
-  writeStr(8,'WAVE');
-  writeStr(12,'fmt ');
-  view.setUint32(16, 16, true);
-  view.setUint16(20, fmt, true);
-  view.setUint16(22, numCh, true);
-  view.setUint32(24, sr, true);
-  view.setUint32(28, sr * numCh * (bps/8), true);
-  view.setUint16(32, numCh * (bps/8), true);
-  view.setUint16(34, bps, true);
-  writeStr(36,'data');
-  view.setUint32(40, dataLen, true);
-  const interleaved = new Float32Array(buffer.length * numCh);
-  for (let ch=0; ch<numCh; ch++) {
-    const cData = buffer.getChannelData(ch);
-    for (let i=0; i<buffer.length; i++) interleaved[i*numCh+ch] = cData[i];
+function encodeWav(buf) {
+  const nCh = buf.numberOfChannels, sr = buf.sampleRate, bps = 32;
+  const dataLen = buf.length * nCh * (bps/8);
+  const ab = new ArrayBuffer(44+dataLen);
+  const v  = new DataView(ab);
+  const ws = (off,s) => { for(let i=0;i<s.length;i++) v.setUint8(off+i,s.charCodeAt(i)); };
+  ws(0,'RIFF'); v.setUint32(4,36+dataLen,true); ws(8,'WAVE'); ws(12,'fmt ');
+  v.setUint32(16,16,true); v.setUint16(20,3,true); v.setUint16(22,nCh,true);
+  v.setUint32(24,sr,true); v.setUint32(28,sr*nCh*(bps/8),true);
+  v.setUint16(32,nCh*(bps/8),true); v.setUint16(34,bps,true);
+  ws(36,'data'); v.setUint32(40,dataLen,true);
+  const out = new Float32Array(buf.length*nCh);
+  for (let ch=0;ch<nCh;ch++) {
+    const d = buf.getChannelData(ch);
+    for (let i=0;i<buf.length;i++) out[i*nCh+ch]=d[i];
   }
-  new Float32Array(wavBuf, 44).set(interleaved);
-  return wavBuf;
+  new Float32Array(ab,44).set(out);
+  return ab;
 }
 
-function setStatus(msg) {
-  document.getElementById('statusMsg').textContent = msg;
-}
-
-// Resize waveform on window resize
+function setStatus(msg) { document.getElementById('statusMsg').textContent = msg; }
 window.addEventListener('resize', () => { if (audioBuffer) drawWaveform(); });
 </script>
 </body>
