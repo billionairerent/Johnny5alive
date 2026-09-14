@@ -1,0 +1,128 @@
+[
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Failure)",
+    "classification": "BOUNCE",
+    "date": "2026-05-08"
+  },
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Failure)",
+    "classification": "BOUNCE",
+    "date": "2026-05-08"
+  },
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Failure)",
+    "classification": "BOUNCE",
+    "date": "2026-05-08"
+  },
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Failure)",
+    "classification": "BOUNCE",
+    "date": "2026-05-08"
+  },
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Failure)",
+    "classification": "BOUNCE",
+    "date": "2026-05-08"
+  },
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Failure)",
+    "classification": "BOUNCE",
+    "date": "2026-05-08"
+  },
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Failure)",
+    "classification": "BOUNCE",
+    "date": "2026-05-08"
+  },
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Failure)",
+    "classification": "BOUNCE",
+    "date": "2026-05-08"
+  },
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Failure)",
+    "classification": "BOUNCE",
+    "date": "2026-05-08"
+  },
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Delay)",
+    "classification": "BOUNCE",
+    "date": "2026-05-08"
+  },
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Delay)",
+    "classification": "BOUNCE",
+    "date": "2026-05-08"
+  },
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Delay)",
+    "classification": "BOUNCE",
+    "date": "2026-05-08"
+  },
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Delay)",
+    "classification": "BOUNCE",
+    "date": "2026-05-09"
+  },
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Delay)",
+    "classification": "BOUNCE",
+    "date": "2026-05-09"
+  },
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Delay)",
+    "classification": "BOUNCE",
+    "date": "2026-05-09"
+  },
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Delay)",
+    "classification": "BOUNCE",
+    "date": "2026-05-09"
+  },
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Failure)",
+    "classification": "BOUNCE",
+    "date": "2026-05-10"
+  },
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Failure)",
+    "classification": "BOUNCE",
+    "date": "2026-05-10"
+  },
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Failure)",
+    "classification": "BOUNCE",
+    "date": "2026-05-10"
+  },
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Delay)",
+    "classification": "BOUNCE",
+    "date": "2026-05-10"
+  },
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Failure)",
+    "classification": "BOUNCE",
+    "date": "2026-05-11"
+  }
+]

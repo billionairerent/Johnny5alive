@@ -1,0 +1,123 @@
+{
+  "project_name": "claude-code-business-playbook",
+  "source_title": "The Claude Code Business Playbook",
+  "source_author": "@brycenwood.ai",
+  "source_date": "April 2026",
+  "source_type": "playbook",
+  "format": "markdown-in-json",
+  "description": "Three Claude Code business systems: cold outreach, AI recommendation via llms.txt, and markdown mirrors.",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Three Systems. One Playbook.",
+      "markdown": "# The Claude Code Business Playbook\n\nThree complete systems any business owner can build with Claude Code.\n\n## Systems\n\n1. **The Cold Outreach Engine**  \n   Find local businesses, score them, write personalized emails with AI, and send them automatically every morning.\n\n2. **The AI Recommendation System (llms.txt)**  \n   Make ChatGPT, Claude, and Perplexity recommend your business when customers ask.\n\n3. **Markdown Mirrors**  \n   Give AI a clean, plain-text version of every page on your site so it can quote you faster, more accurately, and more often.\n"
+    },
+    {
+      "id": "system_1",
+      "title": "System 1 - The Cold Outreach Engine",
+      "markdown": "# System 1 - The Cold Outreach Engine\n\nFind businesses -> score them -> write personalized emails -> send them automatically.\n\n## Intro\n\nBrycen says he built this cold outreach system by talking to Claude Code, without a developer, agency, or monthly software stack.\n\n## What You'll Build\n\nBy the end, you'll have a system that:\n\n1. Finds local businesses in your area that might need your service\n2. Scores each one on a 0-100 scale based on how likely they are to buy\n3. Writes a personalized email to each business by reading its website\n4. Sends emails automatically every morning\n5. Follows up on a timed sequence\n6. Detects replies and shows who responded\n\n## Flow\n\nFind Leads -> Score Them -> Write Emails -> Send Automatically -> Follow Up -> Detect Replies\n\n## Prerequisites\n\n- Claude Code installed on your computer\n- A Gmail account for your business with an App Password\n- A lead list in CSV format\n- An Anthropic API key\n\n## Cost\n\n- About $5-$10 to draft 1,000+ emails via Anthropic API\n- Gmail is free\n- Claude Code subscription referenced as $20/month\n"
+    },
+    {
+      "id": "system_1_step_1",
+      "title": "System 1 - Step 1 - Set Up Your Project",
+      "markdown": "## Step 1 - Set Up Your Project\n\nPaste this into Claude Code:\n\n```text\nI'm building a cold outreach system for my business. Here's what I do:\nBusiness: [YOUR BUSINESS NAME]\nWhat I sell: [YOUR SERVICE - e.g., \"commercial vehicle wraps\", \"HVAC installation\", \"landscaping services\"]\nLocation: [YOUR CITY, STATE]\nService area: [CITIES/COUNTIES YOU SERVE]\nMy ideal customers are:\n- [INDUSTRY 1 - e.g., \"roofing companies\"]\n- [INDUSTRY 2 - e.g., \"plumbing companies\"]\n- [INDUSTRY 3 - e.g., \"HVAC companies\"]\nI have a CSV file of local businesses with columns for: company name, email, phone, city, state, website, industry, reviews count, and reviews rating.\nCreate a project folder structure for this cold outreach system. I need:\n- A folder for my raw lead data (CSV files)\n- A folder for scored/processed leads (JSON)\n- A folder for email drafts\n- A folder for send logs\n- A main scripts folder\nSet this up and create a CLAUDE.md file that explains the project so future sessions have context.\n```\n"
+    },
+    {
+      "id": "system_1_step_2",
+      "title": "System 1 - Step 2 - Build the Lead Scoring Engine",
+      "markdown": "## Step 2 - Build the Lead Scoring Engine\n\nPaste this into Claude Code:\n\n```text\nBuild me a lead scoring script in Python. Here's how I want it to work:\n\nRead all CSV files from my raw leads folder. For each business, score them on a 100-point scale using these categories:\n\nINDUSTRY FIT (20 points max):\n- [YOUR TOP INDUSTRIES] = 20 points (best fit for my service)\n- [YOUR SECOND TIER INDUSTRIES] = 14 points\n- [YOUR LOWER PRIORITY INDUSTRIES] = 8 points\n\nGEOGRAPHY (15 points max):\n- [YOUR PRIMARY CITY/COUNTY] = 15 points\n- [YOUR SECONDARY AREA] = 13 points\n- [BROADER REGION] = 8 points\n- Out of area = 2 points\n\nBUSINESS SIZE SIGNALS (30 points max):\n- Look for keywords in company name that suggest size (fleet, services, systems, enterprises, group = likely bigger)\n- Multiple locations = more points\n- High review count = established business = more points\n- Has \"Inc\", \"LLC\", \"Corp\" in name = more points\n\nDIGITAL PRESENCE (10 points max):\n- Has a website = points\n- Has reviews = points\n- High review rating (4.0+) = points\n\nAfter scoring, assign grades:\n- 55-100 = Grade A (top priority)\n- 35-54 = Grade B (solid leads)\n- 0-34 = Grade C (lower priority)\n\nSave the output as a dated JSON file with all the original info plus the score breakdown.\nDisqualify any lead that has no email AND no phone number.\nSort the output by score, highest first. Print a summary at the end showing how many A's, B's, and C's.\n```\n"
+    },
+    {
+      "id": "system_1_step_3",
+      "title": "System 1 - Step 3 - Write Personalized Emails with AI",
+      "markdown": "## Step 3 - Write Personalized Emails with AI\n\nPaste this into Claude Code:\n\n```text\nBuild me an email drafting script that uses the Claude API to write personalized cold emails.\n```\n"
+    },
+    {
+      "id": "system_1_step_4",
+      "title": "System 1 - Step 4 - Set Up Auto-Sending",
+      "markdown": "## Step 4 - Set Up Auto-Sending\n\nSend via Gmail SMTP with --limit, --dry-run, and --yes flags. Log every send. Never send to the same person twice.\n"
+    },
+    {
+      "id": "system_1_step_5",
+      "title": "System 1 - Step 5 - Add Follow-Up Sequences",
+      "markdown": "## Step 5 - Add Follow-Up Sequences\n\nDay 3-5, 7-11, 14-18, 21-26 follow-up sequence with Re: threading, reply detection, and --dry-run support.\n"
+    },
+    {
+      "id": "system_1_step_6",
+      "title": "System 1 - Step 6 - Detect Replies",
+      "markdown": "## Step 6 - Detect Replies\n\nConnect to Gmail, classify replies as POSITIVE/NEGATIVE/BOUNCE, log results, skip bounces in future sends.\n"
+    },
+    {
+      "id": "system_1_results",
+      "title": "System 1 - Results and Tips",
+      "markdown": "## Results\n\n- 1,213 businesses scored and emailed\n- ~$8 in API calls\n- 15 emails/day on autopilot\n- Zero coding experience required\n"
+    },
+    {
+      "id": "system_2",
+      "title": "System 2 - The AI Recommendation System",
+      "markdown": "# System 2 - The AI Recommendation System (llms.txt)\n\nMake ChatGPT, Claude, and Perplexity recommend your business by name.\n"
+    },
+    {
+      "id": "system_2_step_1",
+      "title": "System 2 - Step 1 - Create Your llms.txt File",
+      "markdown": "## Step 1 - Create Your llms.txt File\n\nBusiness details -> structured llms.txt with About, Services/Pricing, Locations, Contact, Service Area, Key Facts, What Makes Us Different, FAQ.\n"
+    },
+    {
+      "id": "system_2_step_2",
+      "title": "System 2 - Step 2 - Upload It to Your Website",
+      "markdown": "## Step 2 - Upload It to Your Website\n\nFile must live at yourwebsite.com/llms.txt\n"
+    },
+    {
+      "id": "system_2_step_3",
+      "title": "System 2 - Step 3 - Add Schema Markup",
+      "markdown": "## Step 3 - Add Schema Markup\n\nJSON-LD: LocalBusiness, FAQPage, Service. Validate at validator.schema.org.\n"
+    },
+    {
+      "id": "system_2_step_4",
+      "title": "System 2 - Step 4 - Open the Door for AI Crawlers",
+      "markdown": "## Step 4 - Open the Door for AI Crawlers\n\nAllow: GPTBot, ClaudeBot, PerplexityBot, Google-Extended, CCBot in robots.txt.\n"
+    },
+    {
+      "id": "system_2_step_5",
+      "title": "System 2 - Step 5 - Add a Real FAQ Section",
+      "markdown": "## Step 5 - Add a Real FAQ Section\n\n8-10 questions starting with how/what/where/when/why/do. Wrap in FAQPage schema.\n"
+    },
+    {
+      "id": "system_2_step_6",
+      "title": "System 2 - Step 6 - Build Location and Service Pages",
+      "markdown": "## Step 6 - Build Location + Service Pages\n\nLocation pages at /locations/[city]/ and service pages at /services/[service]/. Real content, schema, internal links.\n"
+    },
+    {
+      "id": "system_2_step_7",
+      "title": "System 2 - Step 7 - Test It",
+      "markdown": "## Step 7 - Test It\n\nAsk ChatGPT, Perplexity, Claude, and Google AI Overview: 'who does the best [service] in [city]?'\n"
+    },
+    {
+      "id": "system_2_results",
+      "title": "System 2 - Results and Tips",
+      "markdown": "## Results\n\n- Traffic: ~7/day -> ~100-150/day (~1,400% increase)\n- ChatGPT recommended the business by name\n"
+    },
+    {
+      "id": "system_3",
+      "title": "System 3 - Markdown Mirrors",
+      "markdown": "# System 3 - Markdown Mirrors\n\nGive AI a clean version of every page on your site to read.\n"
+    },
+    {
+      "id": "system_3_step_1",
+      "title": "System 3 - Step 1 - Build the Generator Script",
+      "markdown": "## Step 1 - Build the Generator Script\n\nPython script using BeautifulSoup + markdownify. Walk site folder, strip nav/footer/scripts, convert to clean markdown, write {page_dir}/index.md with frontmatter.\n\n> Note: Source PDF cuts off near end of this prompt.\n"
+    }
+  ],
+  "project_files_suggestion": {
+    "README.md": "# Claude Code Business Playbook\n\nThis project contains markdown-packaged systems for:\n\n- Cold Outreach Engine\n- AI Recommendation System (`llms.txt`)\n- Markdown Mirrors\n",
+    "playbook.json": "Use this JSON object as the source of truth.",
+    "systems/system-1-cold-outreach.md": "Use `sections` entries beginning with `system_1`.",
+    "systems/system-2-ai-recommendation.md": "Use `sections` entries beginning with `system_2`.",
+    "systems/system-3-markdown-mirrors.md": "Use `sections` entries beginning with `system_3`."
+  },
+  "notes": [
+    "This JSON is structured for easy copy/paste into a project or prompt library.",
+    "The uploaded PDF clearly contains Systems 1 and 2 in detail.",
+    "The visible extraction for System 3 cuts off near the end of the generator prompt, so that final subsection is marked accordingly instead of pretending it was complete."
+  ]
+}

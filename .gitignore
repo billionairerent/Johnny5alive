@@ -1,0 +1,8 @@
+# Credentials — NEVER commit
+cold-outreach/.env
+**/.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
