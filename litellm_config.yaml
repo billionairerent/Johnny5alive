@@ -1,0 +1,22 @@
+model_list:
+  - model_name: claude-sonnet-5
+    litellm_params:
+      model: anthropic/claude-sonnet-5
+      api_key: "os.environ/ANTHROPIC_API_KEY"
+
+  - model_name: claude-haiku-4-5
+    litellm_params:
+      model: anthropic/claude-haiku-4-5-20251001
+      api_key: "os.environ/ANTHROPIC_API_KEY"
+
+  - model_name: text-embedding-3-large
+    litellm_params:
+      model: huggingface/BAAI/bge-large-en-v1.5
+      api_key: "none"
+
+litellm_settings:
+  drop_params: true
+  set_verbose: false
+
+general_settings:
+  master_key: "sk-miroshark-local"
