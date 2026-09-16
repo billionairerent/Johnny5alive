@@ -22,6 +22,7 @@ import csv
 import json
 import os
 import re
+import sys
 import time
 import argparse
 from datetime import date
@@ -35,6 +36,11 @@ load_dotenv(Path(__file__).parent.parent / ".env")
 
 YELP_API_KEY = os.environ.get("YELP_API_KEY", "")
 YELP_SEARCH  = "https://api.yelp.com/v3/businesses/search"
+
+# Searches that failed outright (API/network errors) rather than simply
+# returning nothing. Tracked so a total outage is reported as a failure
+# instead of looking identical to "no new businesses today".
+search_errors = 0
 
 TARGET_LOCATIONS = [
     "Memphis, TN",
@@ -106,6 +112,8 @@ def yelp_search(location: str, category: str, limit: int = 50) -> list:
             if len(businesses) < batch:
                 break
         except Exception as e:
+            global search_errors
+            search_errors += 1
             print(f"    Yelp error: {e}")
             break
     return results
@@ -193,7 +201,7 @@ def main():
     if not YELP_API_KEY:
         print("ERROR: YELP_API_KEY not set in .env")
         print("Get a free key at: https://www.yelp.com/developers/v3/manage_app")
-        return
+        sys.exit(1)
 
     base       = Path(__file__).parent.parent
     raw_dir    = base / "data" / "raw"
@@ -207,6 +215,7 @@ def main():
 
     all_rows = []
     this_run_phones: set = set()
+    searches = 0
 
     for location in locations:
         city_state = location.split(",")
@@ -216,6 +225,7 @@ def main():
         for category in categories:
             label = CATEGORY_LABELS.get(category, category)
             print(f"Searching {location} / {label} ...")
+            searches += 1
             businesses = yelp_search(location, category, limit=args.limit)
             print(f"  {len(businesses)} results from Yelp")
 
@@ -264,6 +274,14 @@ def main():
                 print(f"    ✓ {name} ({status})")
 
             print(f"  Added {new_count} new leads\n")
+
+    if search_errors:
+        print(f"WARNING: {search_errors} of {searches} Yelp searches failed.")
+
+    if searches and search_errors == searches:
+        print("ERROR: every Yelp search failed — no leads can be found.")
+        print("Check that YELP_API_KEY is valid and the Yelp API is reachable.")
+        sys.exit(1)
 
     if not all_rows:
         print("No new businesses found.")

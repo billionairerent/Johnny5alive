@@ -38,7 +38,10 @@ jobs:
             > cold-outreach/.env
 
       - name: Find new leads
-        run: cd cold-outreach/scripts && python find_leads.py --limit 25 || true
+        # No "|| true" here: find_leads.py exits 0 when it simply finds nothing
+        # new, and non-zero only when every Yelp search failed. Swallowing that
+        # is what let a four-month lead-sourcing outage keep reporting success.
+        run: cd cold-outreach/scripts && python find_leads.py --limit 25
 
       - name: Save new leads to repo
         run: |
