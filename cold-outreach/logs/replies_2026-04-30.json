@@ -1,0 +1,44 @@
+[
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Failure)",
+    "classification": "BOUNCE",
+    "date": "2026-04-27"
+  },
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Failure)",
+    "classification": "BOUNCE",
+    "date": "2026-04-27"
+  },
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Failure)",
+    "classification": "BOUNCE",
+    "date": "2026-04-27"
+  },
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Failure)",
+    "classification": "BOUNCE",
+    "date": "2026-04-27"
+  },
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Failure)",
+    "classification": "BOUNCE",
+    "date": "2026-04-27"
+  },
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Failure)",
+    "classification": "BOUNCE",
+    "date": "2026-04-27"
+  },
+  {
+    "from_email": "mailer-daemon@googlemail.com",
+    "subject": "Delivery Status Notification (Failure)",
+    "classification": "BOUNCE",
+    "date": "2026-04-27"
+  }
+]
