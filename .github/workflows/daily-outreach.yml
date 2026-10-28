@@ -1,9 +1,21 @@
 name: Daily Outreach — ByteVision Reelworks
 
+# PARKED 2026-10-28. The schedule is deliberately removed — this job ran every
+# weekday from May to October sending zero emails and finding zero leads, while
+# reporting success, and committed a ~49k-line scored JSON on each run.
+#
+# Two things have to be true before a schedule goes back on:
+#   1. Lead sourcing works. Every Yelp search has returned 400 since ~May, so
+#      find_leads.py has nothing to add. YELP_API_KEY / the Yelp plan needs
+#      fixing, or leads come from elsewhere (a CSV in data/raw/ works fine).
+#   2. There is somebody to email. All 99 contacts in logs/ were emailed by
+#      2026-05-11 and the emailable pool is exhausted.
+#
+# Outreach is moving to the Gmail connector, where sending is visible and a
+# failure cannot be swallowed. The scripts below are still the scoring and
+# drafting engine and remain runnable by hand via workflow_dispatch.
+
 on:
-  schedule:
-    - cron: '0 12 * * 1'      # Monday 7:00am CDT — find new leads first
-    - cron: '0 13 * * 1-5'   # Mon–Fri 8:00am CDT — send emails
   workflow_dispatch:           # Manual trigger from GitHub website anytime
 
 jobs:
